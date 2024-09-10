@@ -1,0 +1,15 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1725992537
+icon.svg::CompressedTexture2D::3259165506607749043::1724511960::1724511970::1::::<><>::
+::res://scene/::1725463273
+::res://scene/player/::1725469530
+knight_f_hit_anim_f0.png::CompressedTexture2D::6637105066195925144::1712461789::1725463319::1::::<><>::
+knight_f_idle_anim_f0.png::CompressedTexture2D::4267911310946473891::1712461784::1725463319::1::::<><>::
+knight_f_idle_anim_f1.png::CompressedTexture2D::8932388923361930046::1712461785::1725463319::1::::<><>::
+knight_f_idle_anim_f2.png::CompressedTexture2D::7788972173101083990::1712461785::1725463319::1::::<><>::
+knight_f_idle_anim_f3.png::CompressedTexture2D::7027569008396181428::1712461785::1725463319::1::::<><>::
+knight_f_run_anim_f0.png::CompressedTexture2D::5587992694568285178::1712461787::1725463319::1::::<><>::
+knight_f_run_anim_f1.png::CompressedTexture2D::2623542939539823111::1712461786::1725463319::1::::<><>::
+knight_f_run_anim_f2.png::CompressedTexture2D::3674841792072767861::1712461786::1725463319::1::::<><>::
+knight_f_run_anim_f3.png::CompressedTexture2D::3891461235028742438::1712461786::1725463319::1::::<><>::
+player.tscn::PackedScene::4183186346545637687::1725469530::0::1::::<><>::uid://c1tcfei7yvse7::::res://scene/player/knight_f_hit_anim_f0.png<>uid://b12n41mfc3dlb::::res://scene/player/knight_f_idle_anim_f0.png<>uid://d0i6e1pmrvsdy::::res://scene/player/knight_f_idle_anim_f1.png<>uid://di8bh7fwjpwla::::res://scene/player/knight_f_idle_anim_f2.png<>uid://c7ehbgi4m6nx1::::res://scene/player/knight_f_idle_anim_f3.png<>uid://clu4onj7mwifa::::res://scene/player/knight_f_run_anim_f0.png<>uid://bdm4mspvpgybf::::res://scene/player/knight_f_run_anim_f1.png<>uid://bsmedwf2v1q1b::::res://scene/player/knight_f_run_anim_f2.png<>uid://bvpb2eqisbpu1::::res://scene/player/knight_f_run_anim_f3.png
