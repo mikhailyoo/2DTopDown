@@ -1,8 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1725992537
+::res://::1726665839
 icon.svg::CompressedTexture2D::3259165506607749043::1724511960::1724511970::1::::<><>::
-::res://scene/::1725463273
-::res://scene/player/::1725469530
+::res://assets/::1726578967
+dungeontileset-extended.png::CompressedTexture2D::8524320233795976307::1726578936::1726578967::1::::<><>::
+::res://resources/::1726593536
+world.tres::TileSet::4218493992244218780::1726593536::0::1::::<><>::uid://dtpikrald6jrf::::res://assets/dungeontileset-extended.png
+::res://scene/::1726578767
+::res://scene/level/::1726593536
+level.tscn::PackedScene::2241265095487367083::1726593536::0::1::::<><>::uid://b1dp8ktasw4ii::::res://resources/world.tres
+::res://scene/player/::1726578967
 knight_f_hit_anim_f0.png::CompressedTexture2D::6637105066195925144::1712461789::1725463319::1::::<><>::
 knight_f_idle_anim_f0.png::CompressedTexture2D::4267911310946473891::1712461784::1725463319::1::::<><>::
 knight_f_idle_anim_f1.png::CompressedTexture2D::8932388923361930046::1712461785::1725463319::1::::<><>::
