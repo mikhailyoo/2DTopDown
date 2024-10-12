@@ -1,0 +1,7 @@
+res://scene/mushroom/mushroom.tscn
+res://resources/world.tres
+res://scene/abilities/attack_ability/attack_controller.tscn
+res://scene/abilities/attack_ability/attack_controller.gd
+res://scene/level/level.tscn
+res://scene/player/player.tscn
+res://scene/abilities/attack_ability/attack_ability.tscn
