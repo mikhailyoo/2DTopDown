@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://gkjsjqkbm64f"]
+[gd_scene load_steps=13 format=3 uid="uid://gkjsjqkbm64f"]
 
 [ext_resource type="Texture2D" uid="uid://dvy4yr6lfwleo" path="res://scene/mushroom/SmallMushroom_Idle_1.png" id="1_5lq86"]
 [ext_resource type="Script" path="res://scene/mushroom/mushroom.gd" id="1_ayies"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://c288uygwd0m72" path="res://scene/mushroom/SmallMushroom_Walk_2.png" id="6_nc8hu"]
 [ext_resource type="Texture2D" uid="uid://dum84uimfu630" path="res://scene/mushroom/SmallMushroom_Walk_3.png" id="7_1qef5"]
 [ext_resource type="Texture2D" uid="uid://c805oiy85akah" path="res://scene/mushroom/SmallMushroom_Walk_4.png" id="8_6bg6h"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ru6s2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cb7xh"]
 animations = [{
@@ -54,6 +56,14 @@ radius = 4.0
 collision_layer = 0
 script = ExtResource("1_ayies")
 
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -7)
+shape = SubResource("CircleShape2D_ru6s2")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_cb7xh")
@@ -64,3 +74,5 @@ frame_progress = 0.317957
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_u0udm")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
