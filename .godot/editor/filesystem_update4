@@ -4,3 +4,6 @@ res://scene/level/level.tscn
 res://scene/mushroom/mushroom.tscn
 res://scene/abilities/attack_ability/attack_ability.tscn
 res://scene/abilities/attack_ability/attack_controller.tscn
+res://scene/player/player.gd
+res://scene/spawner/enemy_spawner.gd
+res://scene/spawner/enemy_spawner.tscn

@@ -1,8 +1,8 @@
+Timer
+Node
 CollisionShape2D
 Area2D
 AnimationPlayer
-Node
-Timer
 Sprite2D
 Node2D
 AnimatedSprite2D
