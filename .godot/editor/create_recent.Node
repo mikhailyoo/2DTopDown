@@ -1,6 +1,22 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 TileMap
+=======
+Timer
+Node
+Label
+MarginContainer
+CanvasLayer
+CollisionShape2D
+Area2D
+AnimationPlayer
+Sprite2D
+Node2D
+AnimatedSprite2D
+CharacterBody2D
+Camera2D
+>>>>>>> Stashed changes
 TileMapLayer
 Camera2D
 Node

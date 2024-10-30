@@ -71,3 +71,9 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_0nrqd")
+<<<<<<< Updated upstream
+=======
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+>>>>>>> Stashed changes
