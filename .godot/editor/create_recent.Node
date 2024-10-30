@@ -1,5 +1,8 @@
 Timer
 Node
+Label
+MarginContainer
+CanvasLayer
 CollisionShape2D
 Area2D
 AnimationPlayer

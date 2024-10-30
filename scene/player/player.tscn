@@ -79,3 +79,4 @@ position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_0nrqd")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
