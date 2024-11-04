@@ -1,13 +1,6 @@
-res://scene/player/player.tscn
-res://resources/world.tres
+res://scene/game_objects/exp_bottle/exp_bottle.tscn
+res://scene/game_objects/player/player.tscn
+res://scene/game_objects/exp_bottle/exp_bottle.gd
 res://scene/level/level.tscn
-res://scene/mushroom/mushroom.tscn
-res://scene/abilities/attack_ability/attack_ability.tscn
-res://scene/abilities/attack_ability/attack_controller.tscn
-res://scene/spawner/enemy_spawner.tscn
-res://scene/mushroom/mushroom.gd
-res://scene/player/player.gd
+res://resources/world.tres
 res://scene/ui/arena_time_ui.tscn
-res://scene/manager/arena_time_manager.tscn
-res://scene/manager/arena_time_manager.gd
-res://scene/ui/arena_time_ui.gd

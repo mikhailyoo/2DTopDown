@@ -1,8 +1,6 @@
+res://scene/game_objects/exp_bottle
 res://scene/manager
 res://scene/ui
-res://scene/spawner
 res://scene/abilities/attack_ability
-res://scene/mushroom
 res://resources
 res://scene/level
-res://scene/player
