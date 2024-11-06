@@ -1,6 +1,8 @@
-res://scene/game_objects/exp_bottle/exp_bottle.tscn
-res://scene/game_objects/player/player.tscn
-res://scene/game_objects/exp_bottle/exp_bottle.gd
-res://scene/level/level.tscn
 res://resources/world.tres
-res://scene/ui/arena_time_ui.tscn
+res://scene/manager/experience_manager.tscn
+res://scene/manager/experience_manager.gd
+res://scene/level/level.tscn
+res://scene/global/global.tscn
+res://scene/global/global.gd
+res://scene/game_objects/exp_bottle/exp_bottle.tscn
+res://scene/game_objects/exp_bottle/exp_bottle.gd

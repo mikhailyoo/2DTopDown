@@ -15,9 +15,14 @@ run/main_scene="res://scene/level/level.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://scene/global/global.tscn"
+
 [debug]
 
 gdscript/warnings/unused_parameter=0
+gdscript/warnings/unused_signal=0
 
 [display]
 

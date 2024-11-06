@@ -1,9 +1,9 @@
+Node
 CollisionShape2D
 Area2D
 Sprite2D
 Node2D
 Timer
-Node
 Label
 MarginContainer
 CanvasLayer
