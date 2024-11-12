@@ -1,8 +1,10 @@
-[gd_scene load_steps=13 format=3 uid="uid://gkjsjqkbm64f"]
+[gd_scene load_steps=15 format=3 uid="uid://gkjsjqkbm64f"]
 
 [ext_resource type="Texture2D" uid="uid://dvy4yr6lfwleo" path="res://scene/game_objects/mushroom/SmallMushroom_Idle_1.png" id="1_5lq86"]
 [ext_resource type="Script" path="res://scene/game_objects/mushroom/mushroom.gd" id="1_ayies"]
+[ext_resource type="PackedScene" uid="uid://bknx8pl355mwx" path="res://scene/components/health_component.tscn" id="2_iwc2k"]
 [ext_resource type="Texture2D" uid="uid://yadewbu07bht" path="res://scene/game_objects/mushroom/SmallMushroom_Idle_2.png" id="2_q7cpi"]
+[ext_resource type="PackedScene" uid="uid://c6p3602p5fvng" path="res://scene/components/exp_bottle_drop_component.tscn" id="3_mij10"]
 [ext_resource type="Texture2D" uid="uid://b54ecvk457x08" path="res://scene/game_objects/mushroom/SmallMushroom_Idle_3.png" id="3_vs44p"]
 [ext_resource type="Texture2D" uid="uid://bgkdn76pjjgyd" path="res://scene/game_objects/mushroom/SmallMushroom_Idle_4.png" id="4_17wgj"]
 [ext_resource type="Texture2D" uid="uid://bwnqp300i1ygt" path="res://scene/game_objects/mushroom/SmallMushroom_Walk_1.png" id="5_1t75o"]
@@ -55,6 +57,11 @@ radius = 4.0
 [node name="Mushroom" type="CharacterBody2D" groups=["enemy"]]
 collision_layer = 0
 script = ExtResource("1_ayies")
+
+[node name="HealthComponent" parent="." instance=ExtResource("2_iwc2k")]
+
+[node name="ExpBottleDropComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("3_mij10")]
+health_component = NodePath("../HealthComponent")
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 0

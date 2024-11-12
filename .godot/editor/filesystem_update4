@@ -1,8 +1,8 @@
 res://resources/world.tres
-res://scene/manager/experience_manager.tscn
-res://scene/manager/experience_manager.gd
+res://scene/components/health_component.tscn
+res://scene/components/health_component.gd
+res://scene/game_objects/mushroom/mushroom.tscn
+res://scene/game_objects/mushroom/mushroom.gd
 res://scene/level/level.tscn
-res://scene/global/global.tscn
-res://scene/global/global.gd
-res://scene/game_objects/exp_bottle/exp_bottle.tscn
-res://scene/game_objects/exp_bottle/exp_bottle.gd
+res://scene/components/exp_bottle_drop_component.gd
+res://scene/components/exp_bottle_drop_component.tscn
