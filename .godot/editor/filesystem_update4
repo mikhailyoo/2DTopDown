@@ -1,8 +1,13 @@
+res://scene/components/hurt_box_component.tscn
 res://resources/world.tres
-res://scene/components/health_component.tscn
-res://scene/components/health_component.gd
 res://scene/game_objects/mushroom/mushroom.tscn
+res://scene/components/hit_box_component.tscn
+res://scene/abilities/attack_ability/attack_ability.tscn
+res://scene/abilities/attack_ability/attack_controller.tscn
+res://scene/abilities/attack_ability/attack_controller.gd
+res://scene/components/hit_box_component.gd
+res://scene/abilities/attack_ability/attack_ability.gd
+res://scene/components/hurt_box_component.gd
 res://scene/game_objects/mushroom/mushroom.gd
 res://scene/level/level.tscn
-res://scene/components/exp_bottle_drop_component.gd
-res://scene/components/exp_bottle_drop_component.tscn
+res://scene/components/health_component.tscn

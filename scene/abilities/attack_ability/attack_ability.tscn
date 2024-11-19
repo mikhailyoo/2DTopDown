@@ -1,6 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dbb6jvirbr1te"]
+[gd_scene load_steps=8 format=3 uid="uid://dbb6jvirbr1te"]
 
+[ext_resource type="Script" path="res://scene/abilities/attack_ability/attack_ability.gd" id="1_8q3cs"]
 [ext_resource type="Texture2D" uid="uid://pxp18mpneqyc" path="res://scene/abilities/attack_ability/attack_ability.png" id="1_ksi6a"]
+[ext_resource type="PackedScene" uid="uid://b2xe2q0ii2gk4" path="res://scene/components/hit_box_component.tscn" id="2_lm5kn"]
 
 [sub_resource type="Animation" id="Animation_cu0l4"]
 length = 0.001
@@ -31,7 +33,7 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Area2D/CollisionShape2D:disabled")
+tracks/2/path = NodePath("HitBoxComponent/CollisionShape2D:disabled")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
@@ -86,7 +88,7 @@ tracks/2/keys = {
 tracks/3/type = "value"
 tracks/3/imported = false
 tracks/3/enabled = true
-tracks/3/path = NodePath("Area2D/CollisionShape2D:disabled")
+tracks/3/path = NodePath("HitBoxComponent/CollisionShape2D:disabled")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
@@ -102,10 +104,11 @@ _data = {
 "attack_animation": SubResource("Animation_sdhjs")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_n6x4r"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bpptp"]
 size = Vector2(38, 58)
 
 [node name="AttackAbility" type="Node2D"]
+script = ExtResource("1_8q3cs")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ksi6a")
@@ -117,11 +120,9 @@ libraries = {
 }
 autoplay = "attack_animation"
 
-[node name="Area2D" type="Area2D" parent="."]
-collision_layer = 4
-collision_mask = 0
+[node name="HitBoxComponent" parent="." instance=ExtResource("2_lm5kn")]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitBoxComponent"]
 position = Vector2(19, 0)
-shape = SubResource("RectangleShape2D_n6x4r")
+shape = SubResource("RectangleShape2D_bpptp")
 disabled = true

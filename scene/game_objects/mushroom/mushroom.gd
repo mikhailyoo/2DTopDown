@@ -17,7 +17,3 @@ func get_direction_to_player():
 	if player != null:
 		return (player.global_position - global_position).normalized()
 	return Vector2(0,0)
-
-
-func _on_area_2d_area_entered(area):
-	health_component.take_damage(5)
