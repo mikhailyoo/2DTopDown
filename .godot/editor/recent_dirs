@@ -1,8 +1,8 @@
+res://scene/ui
 res://scene/components
 res://scene/global
 res://scene/manager
 res://scene/game_objects/exp_bottle
-res://scene/ui
 res://scene/abilities/attack_ability
 res://resources
 res://scene/level

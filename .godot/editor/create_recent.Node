@@ -1,3 +1,6 @@
+ProgressBar
+MarginContainer
+CanvasLayer
 Node
 CollisionShape2D
 Area2D
@@ -5,8 +8,6 @@ Sprite2D
 Node2D
 Timer
 Label
-MarginContainer
-CanvasLayer
 AnimationPlayer
 AnimatedSprite2D
 CharacterBody2D
