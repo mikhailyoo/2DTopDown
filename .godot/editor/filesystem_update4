@@ -1,8 +1,8 @@
-res://resources/world.tres
-res://scene/ui/experience_bar.tscn
 res://scene/level/level.tscn
+res://resources/world.tres
+res://resources/upgrades/ability_upgrade.gd
+res://resources/upgrades/sword_rate.tres
 res://scene/manager/experience_manager.tscn
 res://scene/manager/experience_manager.gd
-res://scene/game_objects/exp_bottle/exp_bottle.tscn
-res://scene/game_objects/exp_bottle/exp_bottle.gd
-res://scene/ui/experience_bar.gd
+res://scene/manager/upgrade_manager.tscn
+res://scene/manager/upgrade_manager.gd
