@@ -1,6 +1,6 @@
+res://scene/ui
 res://scene/manager
 res://resources/upgrades
-res://scene/ui
 res://scene/components
 res://scene/global
 res://scene/game_objects/exp_bottle

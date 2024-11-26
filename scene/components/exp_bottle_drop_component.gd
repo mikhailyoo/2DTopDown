@@ -1,7 +1,7 @@
 extends Node
 
 
-@export var drop_percent = .5
+@export var drop_percent = 0
 @export var exp_bottle_scene: PackedScene
 @export var health_component: Node
 

@@ -5,7 +5,7 @@ signal level_up (current_level)
 signal experience_update (current_experience:float, target_experience:float)
 
 var current_experience = 0
-var target_experience = 5
+var target_experience = 1
 var target_after_lvlup = 5
 var current_level = 1
 
