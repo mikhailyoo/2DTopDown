@@ -1,8 +1,0 @@
-res://scene/ui/ability_upgrade_card.gd
-res://scene/ui/ability_upgrade_card.tscn
-res://resources/world.tres
-res://scene/ui/upgrade_screen.tscn
-res://scene/ui/upgrade_screen.gd
-res://scene/manager/upgrade_manager.tscn
-res://scene/manager/upgrade_manager.gd
-res://scene/level/level.tscn
