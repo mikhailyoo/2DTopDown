@@ -1,3 +1,6 @@
+Timer
+CollisionShape2D
+Area2D
 Node2D
 Label
 VBoxContainer
@@ -7,8 +10,5 @@ MarginContainer
 CanvasLayer
 Node
 ProgressBar
-CollisionShape2D
-Area2D
 Sprite2D
-Timer
 AnimationPlayer
