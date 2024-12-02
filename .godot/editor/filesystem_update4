@@ -1,0 +1,10 @@
+res://scene/level/level.tscn
+res://resources/world.tres
+res://scene/manager/spawner/enemy_spawner.gd
+res://scene/components/exp_bottle_drop_component.tscn
+res://scene/components/exp_bottle_drop_component.gd
+res://scene/abilities/attack_ability/attack_controller.tscn
+res://scene/abilities/attack_ability/attack_controller.gd
+res://scene/manager/spawner/enemy_spawner.tscn
+res://scene/game_objects/player/player.tscn
+res://scene/game_objects/mushroom/mushroom.tscn
