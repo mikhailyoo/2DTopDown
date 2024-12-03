@@ -5,7 +5,9 @@ var max_speed = 50
 @onready var health_component = $HealthComponent
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _ready():
+	health_component.died.connect(on_died)
+
 func _process(delta):
 	var direction = get_direction_to_player()
 	velocity = max_speed * direction
@@ -17,3 +19,7 @@ func get_direction_to_player():
 	if player != null:
 		return (player.global_position - global_position).normalized()
 	return Vector2(0,0)
+	
+
+func on_died():
+	queue_free()

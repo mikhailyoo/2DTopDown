@@ -1,3 +1,4 @@
+ProgressBar
 Timer
 CollisionShape2D
 Area2D
@@ -9,6 +10,5 @@ HBoxContainer
 MarginContainer
 CanvasLayer
 Node
-ProgressBar
 Sprite2D
 AnimationPlayer

@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=4 uid="uid://dhjmob1me1bda"]
+[gd_scene load_steps=12 format=4 uid="uid://dhjmob1me1bda"]
 
 [ext_resource type="PackedScene" uid="uid://0v0noh4wlipi" path="res://scene/manager/spawner/enemy_spawner.tscn" id="1_2js51"]
 [ext_resource type="TileSet" uid="uid://e5gea1nudkw5" path="res://resources/world.tres" id="1_a55n7"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://c8re7lujgbs2q" path="res://scene/manager/upgrade_manager.tscn" id="6_p8nyf"]
 [ext_resource type="Script" path="res://resources/upgrades/ability_upgrade.gd" id="7_grgkq"]
 [ext_resource type="Resource" uid="uid://d1pmtb0tkglne" path="res://resources/upgrades/sword_rate.tres" id="8_mfcr4"]
+[ext_resource type="Script" path="res://scene/level/camera_2d.gd" id="11_eqtrg"]
 
 [node name="Level" type="Node"]
 
@@ -37,6 +38,11 @@ tile_set = ExtResource("1_a55n7")
 y_sort_enabled = true
 
 [node name="Player" parent="Back" instance=ExtResource("2_ts23m")]
+unique_name_in_owner = true
 position = Vector2(112, 90)
 
 [node name="Front" type="Node2D" parent="." groups=["front_layer"]]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+script = ExtResource("11_eqtrg")

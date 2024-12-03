@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://b0ump57ta6uh8"]
+[gd_scene load_steps=19 format=3 uid="uid://b0ump57ta6uh8"]
 
 [ext_resource type="Script" path="res://scene/game_objects/player/player.gd" id="1_8oolj"]
 [ext_resource type="Texture2D" uid="uid://c1tcfei7yvse7" path="res://scene/game_objects/player/knight_f_hit_anim_f0.png" id="1_i2o30"]
@@ -12,6 +12,17 @@
 [ext_resource type="Texture2D" uid="uid://bdm4mspvpgybf" path="res://scene/game_objects/player/knight_f_run_anim_f1.png" id="7_vgjvu"]
 [ext_resource type="Texture2D" uid="uid://bsmedwf2v1q1b" path="res://scene/game_objects/player/knight_f_run_anim_f2.png" id="8_s6gq3"]
 [ext_resource type="Texture2D" uid="uid://bvpb2eqisbpu1" path="res://scene/game_objects/player/knight_f_run_anim_f3.png" id="9_8p638"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u2hhs"]
+bg_color = Color(0.133333, 0.133333, 0.133333, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1jwyt"]
+bg_color = Color(0.862745, 0.290196, 0.482353, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.133333, 0.133333, 0.133333, 1)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kovgu"]
 radius = 32.0
@@ -79,9 +90,24 @@ script = ExtResource("1_8oolj")
 [node name="HealthComponent" parent="." instance=ExtResource("3_5ccbm")]
 
 [node name="GracePeriod" type="Timer" parent="."]
+wait_time = 0.2
 one_shot = true
 
+[node name="ProgressBar" type="ProgressBar" parent="."]
+custom_minimum_size = Vector2(24, 4)
+offset_left = -12.0
+offset_top = 4.0
+offset_right = 12.0
+offset_bottom = 8.0
+pivot_offset = Vector2(12, 2)
+theme_override_styles/background = SubResource("StyleBoxFlat_u2hhs")
+theme_override_styles/fill = SubResource("StyleBoxFlat_1jwyt")
+max_value = 1.0
+value = 0.5
+show_percentage = false
+
 [node name="PickUpArea" type="Area2D" parent="."]
+visible = false
 collision_layer = 8
 collision_mask = 0
 
@@ -99,9 +125,6 @@ autoplay = "idle"
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_0nrqd")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position_smoothing_enabled = true
-
 [node name="PlayerHurtBox" type="Area2D" parent="."]
 collision_layer = 0
 collision_mask = 16
@@ -110,5 +133,6 @@ collision_mask = 16
 position = Vector2(0, -8)
 shape = SubResource("CapsuleShape2D_337ul")
 
+[connection signal="timeout" from="GracePeriod" to="." method="_on_grace_period_timeout"]
 [connection signal="area_entered" from="PlayerHurtBox" to="." method="_on_player_hurt_box_area_entered"]
 [connection signal="area_exited" from="PlayerHurtBox" to="." method="_on_player_hurt_box_area_exited"]

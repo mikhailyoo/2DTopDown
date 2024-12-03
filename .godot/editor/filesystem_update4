@@ -1,7 +1,10 @@
-res://scene/game_objects/mushroom/mushroom.tscn
-res://resources/world.tres
 res://scene/game_objects/player/player.tscn
-res://scene/game_objects/player/player.gd
-res://scene/abilities/attack_ability/attack_controller.tscn
-res://scene/abilities/attack_ability/attack_controller.gd
+res://resources/world.tres
 res://scene/level/level.tscn
+res://scene/game_objects/mushroom/mushroom.tscn
+res://scene/abilities/attack_ability/attack_controller.tscn
+res://scene/level/camera_2d.gd
+res://scene/components/health_component.gd
+res://scene/game_objects/player/player.gd
+res://scene/game_objects/mushroom/mushroom.gd
+res://scene/components/health_component.tscn
