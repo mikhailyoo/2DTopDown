@@ -1,9 +1,8 @@
-res://resources/world.tres
-res://scene/ui/end_screen.tscn
-res://scene/ui/end_screen.gd
-res://scene/level/level.tscn
-res://scene/level/level.gd
-res://scene/game_objects/player/player.tscn
-res://scene/components/health_component.tscn
 res://scene/manager/arena_time_manager.gd
 res://scene/manager/arena_time_manager.tscn
+res://resources/world.tres
+res://scene/manager/spawner/enemy_spawner.tscn
+res://scene/manager/spawner/enemy_spawner.gd
+res://scene/level/level.tscn
+res://scene/game_objects/player/player.tscn
+res://scene/game_objects/player/player.gd

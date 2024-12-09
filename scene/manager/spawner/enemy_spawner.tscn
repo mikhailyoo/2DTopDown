@@ -8,7 +8,6 @@ script = ExtResource("1_2qk8y")
 mushroom_scene = ExtResource("2_8jh24")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.2
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -33,8 +33,6 @@ func check_if_damaged():
 	health_component.take_damage(1)
 	grace_period.start()
 	
-	print(health_component.current_health)
-	
 	
 func health_update():
 	progress_bar.value = health_component.get_health_value()

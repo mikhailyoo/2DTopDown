@@ -1,3 +1,4 @@
+Timer
 MarginContainer
 Button
 Label
@@ -5,7 +6,6 @@ VBoxContainer
 PanelContainer
 CanvasLayer
 ProgressBar
-Timer
 CollisionShape2D
 Area2D
 Node2D
