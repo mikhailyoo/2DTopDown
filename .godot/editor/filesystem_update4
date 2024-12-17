@@ -1,5 +1,5 @@
-res://scene/level/level.tscn
-res://resources/world.tres
-res://scene/manager/arena_time_manager.tscn
 res://scene/manager/spawner/enemy_spawner.tscn
+res://resources/world.tres
+res://scene/manager/spawner/enemy_spawner.gd
+res://scene/level/level.tscn
 res://scene/game_objects/player/player.tscn
