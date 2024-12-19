@@ -1,10 +1,11 @@
-[gd_scene load_steps=19 format=3 uid="uid://b0ump57ta6uh8"]
+[gd_scene load_steps=20 format=3 uid="uid://b0ump57ta6uh8"]
 
 [ext_resource type="Script" path="res://scene/game_objects/player/player.gd" id="1_8oolj"]
 [ext_resource type="Texture2D" uid="uid://c1tcfei7yvse7" path="res://scene/game_objects/player/knight_f_hit_anim_f0.png" id="1_i2o30"]
 [ext_resource type="Texture2D" uid="uid://b12n41mfc3dlb" path="res://scene/game_objects/player/knight_f_idle_anim_f0.png" id="2_6qacu"]
 [ext_resource type="PackedScene" uid="uid://d02yl8nx3spsb" path="res://scene/abilities/attack_ability/attack_controller.tscn" id="2_prcev"]
 [ext_resource type="PackedScene" uid="uid://bknx8pl355mwx" path="res://scene/components/health_component.tscn" id="3_5ccbm"]
+[ext_resource type="PackedScene" uid="uid://bgrk4qfh4w8s" path="res://scene/abilities/axe_ability/axe_ability_controller.tscn" id="3_6o7hr"]
 [ext_resource type="Texture2D" uid="uid://d0i6e1pmrvsdy" path="res://scene/game_objects/player/knight_f_idle_anim_f1.png" id="3_kmhla"]
 [ext_resource type="Texture2D" uid="uid://di8bh7fwjpwla" path="res://scene/game_objects/player/knight_f_idle_anim_f2.png" id="4_6n3le"]
 [ext_resource type="Texture2D" uid="uid://c7ehbgi4m6nx1" path="res://scene/game_objects/player/knight_f_idle_anim_f3.png" id="5_5r35s"]
@@ -86,6 +87,8 @@ script = ExtResource("1_8oolj")
 [node name="AbilityManager" type="Node" parent="."]
 
 [node name="AttackController" parent="AbilityManager" instance=ExtResource("2_prcev")]
+
+[node name="AxeAbilityController" parent="AbilityManager" instance=ExtResource("3_6o7hr")]
 
 [node name="HealthComponent" parent="." instance=ExtResource("3_5ccbm")]
 

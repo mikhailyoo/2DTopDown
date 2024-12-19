@@ -1,5 +1,8 @@
-res://scene/manager/spawner/enemy_spawner.tscn
 res://resources/world.tres
-res://scene/manager/spawner/enemy_spawner.gd
+res://scene/abilities/axe_ability/axe_ability.tscn
+res://scene/abilities/axe_ability/axe_ability_controller.tscn
+res://scene/abilities/axe_ability/axe_ability_controller.gd
 res://scene/level/level.tscn
+res://scene/abilities/axe_ability/axe_ability.gd
 res://scene/game_objects/player/player.tscn
+res://scene/manager/spawner/enemy_spawner.tscn
