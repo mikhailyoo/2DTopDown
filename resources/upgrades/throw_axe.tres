@@ -7,5 +7,6 @@
 script = ExtResource("2_3hrk6")
 new_ability_scene = ExtResource("1_1pguw")
 id = "throw_axe"
+max_quantity = 1
 name = "Throw Axe"
 description = "Spawns the spinning Axe"
