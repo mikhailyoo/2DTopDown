@@ -1,10 +1,6 @@
-res://scene/abilities/attack_ability/attack_controller.tscn
-res://resources/world.tres
-res://resources/upgrades/ability_upgrade.gd
-res://scene/manager/upgrade_manager.tscn
-res://resources/upgrades/sword_rate.tres
-res://resources/upgrades/throw_axe.tres
-res://scene/manager/upgrade_manager.gd
-res://scene/level/level.tscn
 res://scene/game_objects/player/player.tscn
-res://scene/global/global.tscn
+res://resources/world.tres
+res://scene/game_objects/player/player.gd
+res://scene/level/level.tscn
+res://scene/game_objects/mushroom/mushroom.tscn
+res://scene/game_objects/mushroom/mushroom.gd
