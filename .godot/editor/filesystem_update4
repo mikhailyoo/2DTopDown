@@ -1,6 +1,2 @@
-res://scene/game_objects/player/player.tscn
 res://resources/world.tres
-res://scene/game_objects/player/player.gd
-res://scene/level/level.tscn
-res://scene/game_objects/mushroom/mushroom.tscn
-res://scene/game_objects/mushroom/mushroom.gd
+res://scene/components/death_component.tscn

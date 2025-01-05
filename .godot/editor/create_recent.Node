@@ -1,4 +1,7 @@
 AnimationPlayer
+AnimationTree
+Node2D
+GPUParticles2D
 CollisionShape2D
 Timer
 Node
@@ -9,7 +12,3 @@ Label
 VBoxContainer
 PanelContainer
 CanvasLayer
-ProgressBar
-Area2D
-Node2D
-HBoxContainer
