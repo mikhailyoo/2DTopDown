@@ -1,10 +1,6 @@
-res://scene/components/death_component.tscn
+res://scene/manager/spawner/enemy_spawner.tscn
 res://resources/world.tres
-res://scene/components/death_component.gd
-res://scene/game_objects/mushroom/mushroom.gd
-res://scene/game_objects/mushroom/mushroom.tscn
+res://scene/manager/spawner/enemy_spawner.gd
+res://scripts/enemy_pool.gd
 res://scene/level/level.tscn
-res://scene/game_objects/player/player.tscn
-res://scene/game_objects/goblin/goblin.tscn
-res://scene/components/movement_component.tscn
-res://scene/components/movement_component.gd
+res://scene/game_objects/mushroom/mushroom.tscn

@@ -73,8 +73,6 @@ sprite = ExtResource("1_5lq86")
 health_component = NodePath("../HealthComponent")
 
 [node name="MovementComponent" parent="." instance=ExtResource("6_621sh")]
-max_speed = 200
-acceleration = 0.1
 
 [node name="HurtBoxComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("4_kek0l")]
 health_component = NodePath("../HealthComponent")
