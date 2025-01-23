@@ -25,7 +25,7 @@ border_width_bottom = 1
 border_color = Color(0.133333, 0.133333, 0.133333, 1)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kovgu"]
-radius = 32.0
+radius = 46.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_x72wf"]
 animations = [{
@@ -107,7 +107,6 @@ value = 0.5
 show_percentage = false
 
 [node name="PickUpArea" type="Area2D" parent="."]
-visible = false
 collision_layer = 8
 collision_mask = 0
 

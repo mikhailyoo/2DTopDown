@@ -1,6 +1,5 @@
-res://scene/manager/spawner/enemy_spawner.tscn
+res://scene/game_objects/exp_bottle/exp_bottle.tscn
 res://resources/world.tres
-res://scene/manager/spawner/enemy_spawner.gd
-res://scripts/enemy_pool.gd
+res://scene/game_objects/exp_bottle/exp_bottle.gd
 res://scene/level/level.tscn
-res://scene/game_objects/mushroom/mushroom.tscn
+res://scene/game_objects/player/player.tscn

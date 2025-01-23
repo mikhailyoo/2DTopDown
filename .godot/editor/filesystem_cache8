@@ -1,9 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1737123860
+::res://::1737621228
 icon.svg::CompressedTexture2D::3259165506607749043::1730115294::1730278808::1::::<><>::
 ::res://assets/::1730278808
 dungeontileset-extended.png::CompressedTexture2D::2561842812612182711::1730278781::1730278808::1::::<><>::
-::res://resources/::1736915149
+::res://resources/::1737123961
 world.tres::TileSet::343058193088573482::1737123961::0::1::::<><>::uid://bcq8gaojm3r24::::res://assets/dungeontileset-extended.png
 ::res://resources/upgrades/::1735239581
 ability_upgrade.gd::GDScript::-1::1735238811::0::1::::AbilityUpgrade<>Resource<>::
@@ -52,9 +52,9 @@ goblin_run_anim_f0.png::CompressedTexture2D::4052200241678129032::1736872852::17
 goblin_run_anim_f1.png::CompressedTexture2D::9103257293483946676::1736872852::1736872853::1::::<><>::
 goblin_run_anim_f2.png::CompressedTexture2D::2437895212435499764::1736872852::1736872853::1::::<><>::
 goblin_run_anim_f3.png::CompressedTexture2D::1578809405027435408::1736872853::1736872853::1::::<><>::
-::res://scene/game_objects/mushroom/::1736917422
+::res://scene/game_objects/mushroom/::1737125734
 mushroom.gd::GDScript::-1::1736917009::0::1::::<>CharacterBody2D<>::
-mushroom.tscn::PackedScene::442355934477199371::1736917422::0::1::::<><>::uid://dvy4yr6lfwleo::::res://scene/game_objects/mushroom/SmallMushroom_Idle_1.png<>res://scene/game_objects/mushroom/mushroom.gd<>uid://dx1r38wof7rea::::res://scene/components/death_component.tscn<>uid://bknx8pl355mwx::::res://scene/components/health_component.tscn<>uid://yadewbu07bht::::res://scene/game_objects/mushroom/SmallMushroom_Idle_2.png<>uid://c6p3602p5fvng::::res://scene/components/exp_bottle_drop_component.tscn<>uid://b54ecvk457x08::::res://scene/game_objects/mushroom/SmallMushroom_Idle_3.png<>uid://bgkdn76pjjgyd::::res://scene/game_objects/mushroom/SmallMushroom_Idle_4.png<>uid://bbjei16oy5wtp::::res://scene/components/hurt_box_component.tscn<>uid://bwnqp300i1ygt::::res://scene/game_objects/mushroom/SmallMushroom_Walk_1.png<>uid://xiddgiw217tu::::res://scene/components/movement_component.tscn<>uid://c288uygwd0m72::::res://scene/game_objects/mushroom/SmallMushroom_Walk_2.png<>uid://dum84uimfu630::::res://scene/game_objects/mushroom/SmallMushroom_Walk_3.png<>uid://c805oiy85akah::::res://scene/game_objects/mushroom/SmallMushroom_Walk_4.png
+mushroom.tscn::PackedScene::442355934477199371::1737125734::0::1::::<><>::uid://dvy4yr6lfwleo::::res://scene/game_objects/mushroom/SmallMushroom_Idle_1.png<>res://scene/game_objects/mushroom/mushroom.gd<>uid://dx1r38wof7rea::::res://scene/components/death_component.tscn<>uid://bknx8pl355mwx::::res://scene/components/health_component.tscn<>uid://yadewbu07bht::::res://scene/game_objects/mushroom/SmallMushroom_Idle_2.png<>uid://c6p3602p5fvng::::res://scene/components/exp_bottle_drop_component.tscn<>uid://b54ecvk457x08::::res://scene/game_objects/mushroom/SmallMushroom_Idle_3.png<>uid://bgkdn76pjjgyd::::res://scene/game_objects/mushroom/SmallMushroom_Idle_4.png<>uid://bbjei16oy5wtp::::res://scene/components/hurt_box_component.tscn<>uid://bwnqp300i1ygt::::res://scene/game_objects/mushroom/SmallMushroom_Walk_1.png<>uid://xiddgiw217tu::::res://scene/components/movement_component.tscn<>uid://c288uygwd0m72::::res://scene/game_objects/mushroom/SmallMushroom_Walk_2.png<>uid://dum84uimfu630::::res://scene/game_objects/mushroom/SmallMushroom_Walk_3.png<>uid://c805oiy85akah::::res://scene/game_objects/mushroom/SmallMushroom_Walk_4.png
 SmallMushroom_Idle_1.png::CompressedTexture2D::8684577426712601058::1730278781::1730726462::1::::<><>::
 SmallMushroom_Idle_2.png::CompressedTexture2D::1684722699468579797::1730278781::1730726462::1::::<><>::
 SmallMushroom_Idle_3.png::CompressedTexture2D::4552200507058081487::1730278781::1730726462::1::::<><>::
@@ -78,10 +78,10 @@ player.tscn::PackedScene::4183186346545637687::1736917422::0::1::::<><>::res://s
 ::res://scene/global/::1735240108
 global.gd::GDScript::-1::1733029582::0::1::::<>Node<>::
 global.tscn::PackedScene::6772178873733849150::1735240108::0::1::::<><>::res://scene/global/global.gd
-::res://scene/level/::1736917422
+::res://scene/level/::1737125733
 camera_2d.gd::GDScript::-1::1733243017::0::1::::<>Camera2D<>::
 level.gd::GDScript::-1::1733351165::0::1::::<>Node<>::
-level.tscn::PackedScene::7669917054599792506::1736917422::0::1::::<><>::uid://0v0noh4wlipi::::res://scene/manager/spawner/enemy_spawner.tscn<>uid://e5gea1nudkw5::::res://resources/world.tres<>uid://bm1c3y5elhmwa::::res://scene/ui/arena_time_ui.tscn<>res://scene/level/level.gd<>uid://c87jgklepc1ni::::res://scene/ui/experience_bar.tscn<>uid://4euuhnshhm2a::::res://scene/manager/arena_time_manager.tscn<>uid://bjvqssei4afw6::::res://scene/ui/end_screen.tscn<>uid://b0ump57ta6uh8::::res://scene/game_objects/player/player.tscn<>uid://c5rm0xnqayqhd::::res://scene/manager/experience_manager.tscn<>uid://c8re7lujgbs2q::::res://scene/manager/upgrade_manager.tscn<>res://scene/level/camera_2d.gd
+level.tscn::PackedScene::7669917054599792506::1737125733::0::1::::<><>::uid://0v0noh4wlipi::::res://scene/manager/spawner/enemy_spawner.tscn<>uid://e5gea1nudkw5::::res://resources/world.tres<>uid://bm1c3y5elhmwa::::res://scene/ui/arena_time_ui.tscn<>res://scene/level/level.gd<>uid://c87jgklepc1ni::::res://scene/ui/experience_bar.tscn<>uid://4euuhnshhm2a::::res://scene/manager/arena_time_manager.tscn<>uid://bjvqssei4afw6::::res://scene/ui/end_screen.tscn<>uid://b0ump57ta6uh8::::res://scene/game_objects/player/player.tscn<>uid://c5rm0xnqayqhd::::res://scene/manager/experience_manager.tscn<>uid://c8re7lujgbs2q::::res://scene/manager/upgrade_manager.tscn<>res://scene/level/camera_2d.gd
 ::res://scene/manager/::1735240108
 arena_time_manager.gd::GDScript::-1::1733740287::0::1::::ArenaTimeManager<>Node<>::
 arena_time_manager.tscn::PackedScene::2044984420825995758::1734251796::0::1::::<><>::res://scene/manager/arena_time_manager.gd<>uid://bjvqssei4afw6::::res://scene/ui/end_screen.tscn
@@ -89,9 +89,9 @@ experience_manager.gd::GDScript::-1::1732610172::0::1::::ExperienceManager<>Node
 experience_manager.tscn::PackedScene::6914375575954449329::1732610449::0::1::::<><>::res://scene/manager/experience_manager.gd
 upgrade_manager.gd::GDScript::-1::1735239944::0::1::::<>Node<>::
 upgrade_manager.tscn::PackedScene::7124468251706247286::1735240108::0::1::::<><>::res://scene/manager/upgrade_manager.gd<>uid://42hqsuxj3ms0::::res://scene/ui/upgrade_screen.tscn<>res://resources/upgrades/ability_upgrade.gd<>uid://d1pmtb0tkglne::::res://resources/upgrades/sword_rate.tres<>uid://c8pgawwiqr4j0::::res://resources/upgrades/throw_axe.tres
-::res://scene/manager/spawner/::1734607590
-enemy_spawner.gd::GDScript::-1::1737123961::0::1::::<>Node<>::
-enemy_spawner.tscn::PackedScene::1799614911413991870::1737123961::0::1::::<><>::res://scene/manager/spawner/enemy_spawner.gd<>uid://gkjsjqkbm64f::::res://scene/game_objects/mushroom/mushroom.tscn<>uid://dlkl15bmubfym::::res://scene/game_objects/goblin/goblin.tscn
+::res://scene/manager/spawner/::1737125733
+enemy_spawner.gd::GDScript::-1::1737125553::0::1::::<>Node<>::
+enemy_spawner.tscn::PackedScene::1799614911413991870::1737125733::0::1::::<><>::res://scene/manager/spawner/enemy_spawner.gd<>uid://gkjsjqkbm64f::::res://scene/game_objects/mushroom/mushroom.tscn<>uid://dlkl15bmubfym::::res://scene/game_objects/goblin/goblin.tscn
 ::res://scene/ui/::1734605086
 ability_upgrade_card.gd::GDScript::-1::1732803565::0::1::::AbilityUpgradeCard<>PanelContainer<>::
 ability_upgrade_card.tscn::PackedScene::6168093312055409969::1732807394::0::1::::<><>::res://scene/ui/ability_upgrade_card.gd
@@ -103,3 +103,5 @@ experience_bar.gd::GDScript::-1::1732107738::0::1::::<>CanvasLayer<>::
 experience_bar.tscn::PackedScene::7155691005697757034::1732108025::0::1::::<><>::res://scene/ui/experience_bar.gd
 upgrade_screen.gd::GDScript::-1::1732804379::0::1::::UpgradeScreen<>CanvasLayer<>::
 upgrade_screen.tscn::PackedScene::2091669233888944381::1732807393::0::1::::<><>::res://scene/ui/upgrade_screen.gd<>uid://ct44uiuuof1nh::::res://scene/ui/ability_upgrade_card.tscn
+::res://scripts/::1737125029
+enemy_pool.gd::GDScript::-1::1737125029::0::1::::EnemyPool<>RefCounted<>::
