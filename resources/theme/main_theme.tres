@@ -1,0 +1,6 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cw04ggqpuqrlu"]
+
+[ext_resource type="FontFile" uid="uid://cqpv4js1r6ol" path="res://resources/theme/Bitfantasy.ttf" id="1_odoer"]
+
+[resource]
+default_font = ExtResource("1_odoer")
