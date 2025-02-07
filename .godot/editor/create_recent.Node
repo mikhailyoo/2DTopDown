@@ -1,5 +1,6 @@
-Node
 AnimationPlayer
+Label
+Node
 AnimationTree
 Node2D
 GPUParticles2D
@@ -8,7 +9,6 @@ Timer
 Sprite2D
 MarginContainer
 Button
-Label
 VBoxContainer
 PanelContainer
 CanvasLayer

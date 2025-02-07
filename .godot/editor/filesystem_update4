@@ -1,5 +1,10 @@
-res://scene/ui/arena_time_ui.tscn
-res://resources/world.tres
 res://scene/level/level.tscn
+res://resources/world.tres
 res://scene/game_objects/exp_bottle/exp_bottle.tscn
 res://scene/game_objects/player/player.tscn
+res://scene/ui/arena_time_ui.tscn
+res://scene/game_objects/exp_bottle/exp_bottle.gd
+res://scene/components/damage_text_component.tscn
+res://scene/components/health_component.gd
+res://scene/components/health_component.tscn
+res://scene/components/damage_text_component.gd
