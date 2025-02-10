@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://gkjsjqkbm64f"]
+[gd_scene load_steps=22 format=3 uid="uid://gkjsjqkbm64f"]
 
 [ext_resource type="Texture2D" uid="uid://dvy4yr6lfwleo" path="res://scene/game_objects/mushroom/SmallMushroom_Idle_1.png" id="1_5lq86"]
 [ext_resource type="Script" path="res://scene/game_objects/mushroom/mushroom.gd" id="1_ayies"]
@@ -13,7 +13,14 @@
 [ext_resource type="PackedScene" uid="uid://xiddgiw217tu" path="res://scene/components/movement_component.tscn" id="6_621sh"]
 [ext_resource type="Texture2D" uid="uid://c288uygwd0m72" path="res://scene/game_objects/mushroom/SmallMushroom_Walk_2.png" id="6_nc8hu"]
 [ext_resource type="Texture2D" uid="uid://dum84uimfu630" path="res://scene/game_objects/mushroom/SmallMushroom_Walk_3.png" id="7_1qef5"]
+[ext_resource type="PackedScene" uid="uid://d3ve7w7ihn2oi" path="res://scene/components/flash_component.tscn" id="7_2oetv"]
 [ext_resource type="Texture2D" uid="uid://c805oiy85akah" path="res://scene/game_objects/mushroom/SmallMushroom_Walk_4.png" id="8_6bg6h"]
+[ext_resource type="Shader" path="res://scene/components/flash_component.gdshader" id="8_d4b48"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_n2ito"]
+resource_local_to_scene = true
+shader = ExtResource("8_d4b48")
+shader_parameter/percent = 0.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7dmwc"]
 
@@ -74,6 +81,11 @@ health_component = NodePath("../HealthComponent")
 
 [node name="MovementComponent" parent="." instance=ExtResource("6_621sh")]
 
+[node name="FlashComponent" parent="." node_paths=PackedStringArray("health_component", "sprite") instance=ExtResource("7_2oetv")]
+health_component = NodePath("../HealthComponent")
+sprite = NodePath("../AnimatedSprite2D")
+flash_material = SubResource("ShaderMaterial_n2ito")
+
 [node name="HurtBoxComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("4_kek0l")]
 health_component = NodePath("../HealthComponent")
 
@@ -82,11 +94,11 @@ position = Vector2(0, -7)
 shape = SubResource("CircleShape2D_7dmwc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -16)
 sprite_frames = SubResource("SpriteFrames_cb7xh")
 animation = &"run"
 autoplay = "idle"
 frame_progress = 0.317957
+offset = Vector2(0, -16)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)

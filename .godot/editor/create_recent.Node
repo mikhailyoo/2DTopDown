@@ -1,12 +1,12 @@
+Sprite2D
+Node
 AnimationPlayer
 Label
-Node
 AnimationTree
 Node2D
 GPUParticles2D
 CollisionShape2D
 Timer
-Sprite2D
 MarginContainer
 Button
 VBoxContainer
