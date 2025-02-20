@@ -7,4 +7,3 @@ void fragment() {
 	vec4 flash_color = mix(sprite_color, vec4(1.0, 1.0, 1.0, sprite_color.a), percent);
 	COLOR = flash_color;
 }
-
