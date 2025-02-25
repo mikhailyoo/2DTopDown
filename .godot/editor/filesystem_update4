@@ -1,11 +1,5 @@
 res://scene/level/level.tscn
 res://scene/components/flash_component.gdshader
 res://resources/world.tres
-res://scene/manager/upgrade_manager.tscn
-res://resources/upgrades/sword_damage.tres
-res://scene/abilities/attack_ability/attack_controller.tscn
-res://scene/abilities/attack_ability/attack_controller.gd
-res://scene/abilities/axe_ability/axe_ability_controller.gd
-res://scene/abilities/axe_ability/axe_ability_controller.tscn
-res://scene/components/damage_text_component.tscn
-res://scene/components/damage_text_component.gd
+res://scene/ui/ability_upgrade_card.tscn
+res://resources/theme/main_theme.tres
