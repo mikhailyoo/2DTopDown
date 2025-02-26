@@ -1,7 +1,8 @@
-[gd_resource type="Theme" load_steps=4 format=3 uid="uid://cw04ggqpuqrlu"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://cw04ggqpuqrlu"]
 
 [ext_resource type="Texture2D" uid="uid://bwv5hs550156s" path="res://assets/ui_panel.png" id="1_g3ysd"]
 [ext_resource type="FontFile" uid="uid://cqpv4js1r6ol" path="res://resources/theme/Bitfantasy.ttf" id="1_odoer"]
+[ext_resource type="Texture2D" uid="uid://065iuvqq286q" path="res://assets/ui_panel2.png" id="2_ocmrm"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6fir8"]
 texture = ExtResource("1_g3ysd")
@@ -11,6 +12,19 @@ texture_margin_right = 10.0
 texture_margin_bottom = 10.0
 region_rect = Rect2(0, 0, 32, 32)
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ieh0n"]
+content_margin_left = 4.0
+content_margin_top = 0.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+texture = ExtResource("2_ocmrm")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+
 [resource]
 default_font = ExtResource("1_odoer")
 PanelContainer/styles/panel = SubResource("StyleBoxTexture_6fir8")
+PanelContainer2/base_type = &"PanelContainer"
+PanelContainer2/styles/panel = SubResource("StyleBoxTexture_ieh0n")

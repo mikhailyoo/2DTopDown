@@ -1,5 +1,5 @@
-res://scene/level/level.tscn
-res://scene/components/flash_component.gdshader
-res://resources/world.tres
 res://scene/ui/ability_upgrade_card.tscn
 res://resources/theme/main_theme.tres
+res://scene/components/flash_component.gdshader
+res://resources/world.tres
+res://scene/level/level.tscn

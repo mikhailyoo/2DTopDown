@@ -1,3 +1,5 @@
+MarginContainer
+PanelContainer
 Sprite2D
 Node
 AnimationPlayer
@@ -7,8 +9,6 @@ Node2D
 GPUParticles2D
 CollisionShape2D
 Timer
-MarginContainer
 Button
 VBoxContainer
-PanelContainer
 CanvasLayer
