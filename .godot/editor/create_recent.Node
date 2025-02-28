@@ -1,8 +1,8 @@
+AnimationPlayer
 MarginContainer
 PanelContainer
 Sprite2D
 Node
-AnimationPlayer
 Label
 AnimationTree
 Node2D
