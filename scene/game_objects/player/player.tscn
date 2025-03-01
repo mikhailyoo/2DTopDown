@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://b0ump57ta6uh8"]
+[gd_scene load_steps=21 format=3 uid="uid://b0ump57ta6uh8"]
 
 [ext_resource type="Script" path="res://scene/game_objects/player/player.gd" id="1_8oolj"]
 [ext_resource type="Texture2D" uid="uid://c1tcfei7yvse7" path="res://scene/game_objects/player/knight_f_hit_anim_f0.png" id="1_i2o30"]
@@ -19,9 +19,6 @@
 resource_local_to_scene = true
 shader = ExtResource("5_rcb2o")
 shader_parameter/percent = 0.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u2hhs"]
-bg_color = Color(0.133333, 0.133333, 0.133333, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1jwyt"]
 bg_color = Color(0.862745, 0.290196, 0.482353, 1)
@@ -112,7 +109,6 @@ offset_top = 4.0
 offset_right = 12.0
 offset_bottom = 8.0
 pivot_offset = Vector2(12, 2)
-theme_override_styles/background = SubResource("StyleBoxFlat_u2hhs")
 theme_override_styles/fill = SubResource("StyleBoxFlat_1jwyt")
 max_value = 1.0
 value = 0.5

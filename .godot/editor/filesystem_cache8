@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1740815119
+::res://::1740844713
 icon.svg::CompressedTexture2D::3259165506607749043::1730115294::1730278808::1::::<><>::
 ::res://assets/::1740573539
 dungeontileset-extended.png::CompressedTexture2D::2561842812612182711::1730278781::1730278808::1::::<><>::
@@ -31,7 +31,7 @@ axe_ability.tscn::PackedScene::8663828382211445702::1734607590::0::1::::<><>::re
 axe_ability_controller.gd::GDScript::-1::1739980274::0::1::::<>Node<>::
 axe_ability_controller.tscn::PackedScene::83626705110192580::1739981199::0::1::::<><>::res://scene/abilities/axe_ability/axe_ability_controller.gd<>uid://dvo28ty0nvx0a::::res://scene/abilities/axe_ability/axe_ability.tscn
 weapon_throwing_axe.png::CompressedTexture2D::8732425750721563116::1734605076::1734605086::1::::<><>::
-::res://scene/components/::1740811457
+::res://scene/components/::1740815137
 damage_text_component.gd::GDScript::-1::1739980598::0::1::::<>Node2D<>::
 damage_text_component.tscn::PackedScene::3205932494486176668::1739981199::0::1::::<><>::res://scene/components/damage_text_component.gd
 death_component.gd::GDScript::-1::1736915149::0::1::::DeathComp<>Node2D<>::
@@ -39,7 +39,7 @@ death_component.tscn::PackedScene::8828363235366276188::1736917422::0::1::::<><>
 exp_bottle_drop_component.gd::GDScript::-1::1733126410::0::1::::<>Node<>::
 exp_bottle_drop_component.tscn::PackedScene::6981417977399930940::1733126757::0::1::::<><>::res://scene/components/exp_bottle_drop_component.gd<>uid://8127grb7ljmn::::res://scene/game_objects/exp_bottle/exp_bottle.tscn
 flash_component.gd::GDScript::-1::1739087356::0::1::::<>Node<>::
-flash_component.gdshader::Shader::-1::1740811457::0::1::::<><>::
+flash_component.gdshader::Shader::-1::1740815137::0::1::::<><>::
 flash_component.tscn::PackedScene::9168202824476312616::1739087763::0::1::::<><>::res://scene/components/flash_component.gd<>uid://38gayvuapmt2::::res://scene/components/flash_material.tres
 flash_material.tres::ShaderMaterial::2033777683616086921::1739087490::0::1::::<><>::res://scene/components/flash_component.gdshader
 health_component.gd::GDScript::-1::1738917078::0::1::::HealthComponent<>Node<>::
