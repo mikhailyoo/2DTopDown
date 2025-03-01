@@ -1,8 +1,0 @@
-res://scene/level/level.tscn
-res://resources/theme/main_theme.tres
-res://scene/components/flash_component.gdshader
-res://resources/world.tres
-res://scene/ui/ability_upgrade_card.tscn
-res://scene/ui/upgrade_screen.tscn
-res://scene/manager/upgrade_manager.tscn
-res://scene/ui/upgrade_screen.gd
