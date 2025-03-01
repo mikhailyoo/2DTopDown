@@ -1,4 +1,5 @@
 AnimationPlayer
+ColorRect
 MarginContainer
 PanelContainer
 Sprite2D
@@ -11,4 +12,3 @@ CollisionShape2D
 Timer
 Button
 VBoxContainer
-CanvasLayer
