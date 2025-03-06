@@ -28,6 +28,8 @@ bg_color = Color(0.133333, 0.133333, 0.133333, 1)
 
 [resource]
 default_font = ExtResource("1_odoer")
+Label/colors/font_outline_color = Color(0.133333, 0.133333, 0.133333, 1)
+Label/constants/outline_size = 4
 PanelContainer/styles/panel = SubResource("StyleBoxTexture_6fir8")
 PanelContainer2/base_type = &"PanelContainer"
 PanelContainer2/styles/panel = SubResource("StyleBoxTexture_ieh0n")
