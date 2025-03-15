@@ -1,3 +1,4 @@
+VBoxContainer
 AnimationPlayer
 ColorRect
 MarginContainer
@@ -11,4 +12,3 @@ GPUParticles2D
 CollisionShape2D
 Timer
 Button
-VBoxContainer
