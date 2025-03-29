@@ -1,1 +1,12 @@
-res://scene/player
+res://scene/ui
+res://scene/components
+res://resources/theme
+res://scene/game_objects/goblin
+res://scene/abilities/axe_ability
+res://scene/manager
+res://resources/upgrades
+res://scene/global
+res://scene/game_objects/exp_bottle
+res://scene/abilities/attack_ability
+res://resources
+res://scene/level

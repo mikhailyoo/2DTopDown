@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://d3ve7w7ihn2oi"]
+
+[ext_resource type="Script" path="res://scene/components/flash_component.gd" id="1_ilpu7"]
+[ext_resource type="Material" uid="uid://38gayvuapmt2" path="res://scene/components/flash_material.tres" id="2_f1rux"]
+
+[node name="FlashComponent" type="Node"]
+script = ExtResource("1_ilpu7")
+flash_material = ExtResource("2_f1rux")

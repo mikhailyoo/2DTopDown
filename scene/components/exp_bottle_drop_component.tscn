@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c6p3602p5fvng"]
+
+[ext_resource type="Script" path="res://scene/components/exp_bottle_drop_component.gd" id="1_qpr0y"]
+[ext_resource type="PackedScene" uid="uid://8127grb7ljmn" path="res://scene/game_objects/exp_bottle/exp_bottle.tscn" id="2_tsi0t"]
+
+[node name="ExpBottleDropComponent" type="Node"]
+script = ExtResource("1_qpr0y")
+exp_bottle_scene = ExtResource("2_tsi0t")

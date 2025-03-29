@@ -1,10 +1,14 @@
-<<<<<<< Updated upstream
-=======
-TileMap
-TileMapLayer
-Camera2D
+AnimationPlayer
+ColorRect
+CanvasLayer
+VBoxContainer
+MarginContainer
+PanelContainer
+Sprite2D
 Node
->>>>>>> Stashed changes
-AnimatedSprite2D
+Label
+AnimationTree
+Node2D
+GPUParticles2D
 CollisionShape2D
-CharacterBody2D
+Timer

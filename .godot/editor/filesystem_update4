@@ -1,3 +1,8 @@
-res://scene/player/player.tscn
-res://resources/world.tres
 res://scene/level/level.tscn
+res://resources/theme/main_theme.tres
+res://scene/components/flash_component.gdshader
+res://resources/world.tres
+res://scene/ui/vignette.gdshader
+res://scene/ui/vignette.tscn
+res://scene/game_objects/player/player.tscn
+res://scene/global/global.tscn
