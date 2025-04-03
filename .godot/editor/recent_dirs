@@ -1,5 +1,5 @@
-res://scene/ui
 res://scene/components
+res://scene/ui
 res://resources/theme
 res://scene/game_objects/goblin
 res://scene/abilities/axe_ability

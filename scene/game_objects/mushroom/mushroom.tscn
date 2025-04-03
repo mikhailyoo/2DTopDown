@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://gkjsjqkbm64f"]
+[gd_scene load_steps=23 format=3 uid="uid://gkjsjqkbm64f"]
 
 [ext_resource type="Texture2D" uid="uid://dvy4yr6lfwleo" path="res://scene/game_objects/mushroom/SmallMushroom_Idle_1.png" id="1_5lq86"]
 [ext_resource type="Script" path="res://scene/game_objects/mushroom/mushroom.gd" id="1_ayies"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://d3ve7w7ihn2oi" path="res://scene/components/flash_component.tscn" id="7_2oetv"]
 [ext_resource type="Texture2D" uid="uid://c805oiy85akah" path="res://scene/game_objects/mushroom/SmallMushroom_Walk_4.png" id="8_6bg6h"]
 [ext_resource type="Shader" path="res://scene/components/flash_component.gdshader" id="8_d4b48"]
+[ext_resource type="PackedScene" uid="uid://snctce3halo1" path="res://scene/components/hit_sound_component.tscn" id="9_r0xml"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_n2ito"]
 resource_local_to_scene = true
@@ -86,8 +87,11 @@ health_component = NodePath("../HealthComponent")
 sprite = NodePath("../AnimatedSprite2D")
 flash_material = SubResource("ShaderMaterial_n2ito")
 
-[node name="HurtBoxComponent" parent="." node_paths=PackedStringArray("health_component") instance=ExtResource("4_kek0l")]
+[node name="HitSoundComponent" parent="." instance=ExtResource("9_r0xml")]
+
+[node name="HurtBoxComponent" parent="." node_paths=PackedStringArray("health_component", "hit_sound_component") instance=ExtResource("4_kek0l")]
 health_component = NodePath("../HealthComponent")
+hit_sound_component = NodePath("../HitSoundComponent")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBoxComponent"]
 position = Vector2(0, -7)

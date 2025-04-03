@@ -17,6 +17,8 @@
 script = ExtResource("1_qiyqh")
 end_screen_scene = ExtResource("2_dv6je")
 
+[node name="Vignette" parent="." instance=ExtResource("12_ltc33")]
+
 [node name="ArenaTimeUI" parent="." node_paths=PackedStringArray("arena_time_manager") instance=ExtResource("1_i7ujk")]
 arena_time_manager = NodePath("../ArenaTimeManager")
 
@@ -53,5 +55,3 @@ position = Vector2(112, 90)
 [node name="Camera2D" type="Camera2D" parent="."]
 position_smoothing_enabled = true
 script = ExtResource("11_eqtrg")
-
-[node name="Vignette" parent="." instance=ExtResource("12_ltc33")]

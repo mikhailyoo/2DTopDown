@@ -1,6 +1,12 @@
-[gd_scene load_steps=8 format=3 uid="uid://dx1r38wof7rea"]
+[gd_scene load_steps=15 format=3 uid="uid://dx1r38wof7rea"]
 
 [ext_resource type="Script" path="res://scene/components/death_component.gd" id="1_yykl7"]
+[ext_resource type="PackedScene" uid="uid://snctce3halo1" path="res://scene/components/hit_sound_component.tscn" id="2_k28hp"]
+[ext_resource type="AudioStream" uid="uid://bcxtm0ttjv60x" path="res://assets/audio/death/hurt1.MP3" id="3_xb2yh"]
+[ext_resource type="AudioStream" uid="uid://baheemfp7ncq8" path="res://assets/audio/death/hurt2.MP3" id="4_x7btb"]
+[ext_resource type="AudioStream" uid="uid://dyrntrcljdjba" path="res://assets/audio/death/hurt3.MP3" id="5_nyygc"]
+[ext_resource type="AudioStream" uid="uid://dw2ltl4qvtouf" path="res://assets/audio/death/hurt4.MP3" id="6_178be"]
+[ext_resource type="AudioStream" uid="uid://sktidw1ffde6" path="res://assets/audio/death/hurt5.MP3" id="7_6stkx"]
 
 [sub_resource type="Animation" id="Animation_dxtew"]
 length = 0.001
@@ -71,6 +77,14 @@ angular_velocity_max = 112.95
 gravity = Vector3(0, 500, 0)
 alpha_curve = SubResource("CurveTexture_6kwwj")
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_dsoy8"]
+streams_count = 5
+stream_0/stream = ExtResource("3_xb2yh")
+stream_1/stream = ExtResource("4_x7btb")
+stream_2/stream = ExtResource("5_nyygc")
+stream_3/stream = ExtResource("6_178be")
+stream_4/stream = ExtResource("7_6stkx")
+
 [node name="DeathComponent" type="Node2D"]
 script = ExtResource("1_yykl7")
 
@@ -91,3 +105,8 @@ lifetime = 0.8
 one_shot = true
 fixed_fps = 0
 interpolate = false
+
+[node name="HitSoundComponent" parent="." instance=ExtResource("2_k28hp")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_dsoy8")
