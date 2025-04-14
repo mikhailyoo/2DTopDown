@@ -1,6 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjvqssei4afw6"]
+[gd_scene load_steps=9 format=3 uid="uid://bjvqssei4afw6"]
 
 [ext_resource type="Script" path="res://scene/ui/end_screen.gd" id="1_vhmv7"]
+[ext_resource type="PackedScene" uid="uid://casqlq2123jjf" path="res://scene/ui/sound_button.tscn" id="2_j5v54"]
+[ext_resource type="AudioStream" uid="uid://c2k02bfd7gpau" path="res://assets/audio/jingles/victory2.ogg" id="3_f1l1m"]
+[ext_resource type="AudioStream" uid="uid://cwldamj7xheqf" path="res://assets/audio/jingles/game_over3.ogg" id="4_tvts7"]
 
 [sub_resource type="Animation" id="Animation_d1npx"]
 length = 0.001
@@ -107,13 +110,23 @@ text = "Game Over"
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="RestartButton" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+[node name="RestartButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" instance=ExtResource("2_j5v54")]
 layout_mode = 2
 text = "Restart"
 
-[node name="QuitButton" type="Button" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+[node name="QuitButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer" instance=ExtResource("2_j5v54")]
 layout_mode = 2
 text = "Quit"
+
+[node name="VictorySound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_f1l1m")
+volume_db = -5.0
+bus = &"SFX"
+
+[node name="DefeatSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_tvts7")
+volume_db = -5.0
+bus = &"SFX"
 
 [connection signal="pressed" from="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/RestartButton" to="." method="_on_restart_button_pressed"]
 [connection signal="pressed" from="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

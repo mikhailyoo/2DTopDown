@@ -63,6 +63,7 @@ func on_died():
 	
 
 func on_health_changed():
+	$AudioStreamPlayer2D.play()
 	Global.player_damaged.emit()
 	health_update()
 

@@ -1,9 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://8127grb7ljmn"]
+[gd_scene load_steps=6 format=3 uid="uid://8127grb7ljmn"]
 
 [ext_resource type="Script" path="res://scene/game_objects/exp_bottle/exp_bottle.gd" id="1_xm171"]
 [ext_resource type="Texture2D" uid="uid://hl51yntjjrpa" path="res://scene/game_objects/exp_bottle/exp_bottle.png" id="1_xq65t"]
+[ext_resource type="AudioStream" uid="uid://bt21schuqmbpn" path="res://assets/audio/bottle/bubble2.wav" id="3_aflke"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4p0ve"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_ljhvy"]
+random_pitch = 1.5
+streams_count = 1
+stream_0/stream = ExtResource("3_aflke")
 
 [node name="ExpBottle" type="Node2D"]
 script = ExtResource("1_xm171")
@@ -17,5 +23,10 @@ shape = SubResource("CircleShape2D_4p0ve")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_xq65t")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_ljhvy")
+volume_db = -5.0
+bus = &"SFX"
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

@@ -1,4 +1,6 @@
+AudioStreamPlayer
 AudioStreamPlayer2D
+Button
 AnimationPlayer
 ColorRect
 CanvasLayer
@@ -10,5 +12,3 @@ Node
 Label
 AnimationTree
 Node2D
-GPUParticles2D
-CollisionShape2D

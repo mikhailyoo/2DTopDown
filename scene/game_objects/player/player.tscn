@@ -1,20 +1,25 @@
-[gd_scene load_steps=22 format=3 uid="uid://b0ump57ta6uh8"]
+[gd_scene load_steps=28 format=3 uid="uid://b0ump57ta6uh8"]
 
 [ext_resource type="Script" path="res://scene/game_objects/player/player.gd" id="1_8oolj"]
-[ext_resource type="Texture2D" uid="uid://c1tcfei7yvse7" path="res://scene/player/knight_f_hit_anim_f0.png" id="1_i2o30"]
-[ext_resource type="Texture2D" uid="uid://b12n41mfc3dlb" path="res://scene/player/knight_f_idle_anim_f0.png" id="2_6qacu"]
 [ext_resource type="PackedScene" uid="uid://d02yl8nx3spsb" path="res://scene/abilities/attack_ability/attack_controller.tscn" id="2_prcev"]
 [ext_resource type="PackedScene" uid="uid://bknx8pl355mwx" path="res://scene/components/health_component.tscn" id="3_5ccbm"]
-[ext_resource type="Texture2D" uid="uid://d0i6e1pmrvsdy" path="res://scene/player/knight_f_idle_anim_f1.png" id="3_kmhla"]
-[ext_resource type="Texture2D" uid="uid://di8bh7fwjpwla" path="res://scene/player/knight_f_idle_anim_f2.png" id="4_6n3le"]
 [ext_resource type="PackedScene" uid="uid://xiddgiw217tu" path="res://scene/components/movement_component.tscn" id="4_gx6ij"]
 [ext_resource type="PackedScene" uid="uid://d3ve7w7ihn2oi" path="res://scene/components/flash_component.tscn" id="4_vg873"]
-[ext_resource type="Texture2D" uid="uid://c7ehbgi4m6nx1" path="res://scene/player/knight_f_idle_anim_f3.png" id="5_5r35s"]
 [ext_resource type="Shader" path="res://scene/components/flash_component.gdshader" id="5_rcb2o"]
-[ext_resource type="Texture2D" uid="uid://clu4onj7mwifa" path="res://scene/player/knight_f_run_anim_f0.png" id="6_kiy7l"]
-[ext_resource type="Texture2D" uid="uid://bdm4mspvpgybf" path="res://scene/player/knight_f_run_anim_f1.png" id="7_vgjvu"]
-[ext_resource type="Texture2D" uid="uid://bsmedwf2v1q1b" path="res://scene/player/knight_f_run_anim_f2.png" id="8_s6gq3"]
-[ext_resource type="Texture2D" uid="uid://bvpb2eqisbpu1" path="res://scene/player/knight_f_run_anim_f3.png" id="9_8p638"]
+[ext_resource type="Texture2D" uid="uid://c1tcfei7yvse7" path="res://scene/game_objects/player/knight_f_hit_anim_f0.png" id="7_yq5l8"]
+[ext_resource type="Texture2D" uid="uid://b12n41mfc3dlb" path="res://scene/game_objects/player/knight_f_idle_anim_f0.png" id="8_yr3o1"]
+[ext_resource type="Texture2D" uid="uid://d0i6e1pmrvsdy" path="res://scene/game_objects/player/knight_f_idle_anim_f1.png" id="9_8lxno"]
+[ext_resource type="Texture2D" uid="uid://di8bh7fwjpwla" path="res://scene/game_objects/player/knight_f_idle_anim_f2.png" id="10_hfeda"]
+[ext_resource type="Texture2D" uid="uid://c7ehbgi4m6nx1" path="res://scene/game_objects/player/knight_f_idle_anim_f3.png" id="11_oik7n"]
+[ext_resource type="Texture2D" uid="uid://clu4onj7mwifa" path="res://scene/game_objects/player/knight_f_run_anim_f0.png" id="12_7pra5"]
+[ext_resource type="Texture2D" uid="uid://bdm4mspvpgybf" path="res://scene/game_objects/player/knight_f_run_anim_f1.png" id="13_npkq7"]
+[ext_resource type="Texture2D" uid="uid://bsmedwf2v1q1b" path="res://scene/game_objects/player/knight_f_run_anim_f2.png" id="14_6jxk3"]
+[ext_resource type="Texture2D" uid="uid://bvpb2eqisbpu1" path="res://scene/game_objects/player/knight_f_run_anim_f3.png" id="15_dfww4"]
+[ext_resource type="AudioStream" uid="uid://dni3ta7ef8ft7" path="res://assets/audio/hit/damage1.ogg" id="16_e54mx"]
+[ext_resource type="AudioStream" uid="uid://dkjicepy4a1yx" path="res://assets/audio/hit/damage2.ogg" id="17_8j4kk"]
+[ext_resource type="AudioStream" uid="uid://ddh5xfcekkobf" path="res://assets/audio/hit/damage3.ogg" id="18_xmhoq"]
+[ext_resource type="AudioStream" uid="uid://fxp2mbbthemo" path="res://assets/audio/hit/damage4.ogg" id="19_2lntu"]
+[ext_resource type="AudioStream" uid="uid://dmuf2ml7ew45r" path="res://assets/audio/hit/damage5.ogg" id="20_h3aki"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_47318"]
 resource_local_to_scene = true
@@ -36,7 +41,7 @@ radius = 46.0
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_i2o30")
+"texture": ExtResource("7_yq5l8")
 }],
 "loop": false,
 "name": &"hit",
@@ -44,16 +49,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_6qacu")
+"texture": ExtResource("8_yr3o1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_kmhla")
+"texture": ExtResource("9_8lxno")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_6n3le")
+"texture": ExtResource("10_hfeda")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_5r35s")
+"texture": ExtResource("11_oik7n")
 }],
 "loop": true,
 "name": &"idle",
@@ -61,16 +66,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_kiy7l")
+"texture": ExtResource("12_7pra5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_vgjvu")
+"texture": ExtResource("13_npkq7")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_s6gq3")
+"texture": ExtResource("14_6jxk3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_8p638")
+"texture": ExtResource("15_dfww4")
 }],
 "loop": true,
 "name": &"run",
@@ -83,6 +88,14 @@ radius = 5.0
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_337ul"]
 radius = 5.0
 height = 16.0
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_c00g3"]
+streams_count = 5
+stream_0/stream = ExtResource("16_e54mx")
+stream_1/stream = ExtResource("17_8j4kk")
+stream_2/stream = ExtResource("18_xmhoq")
+stream_3/stream = ExtResource("19_2lntu")
+stream_4/stream = ExtResource("20_h3aki")
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_layer = 0
@@ -130,7 +143,7 @@ shape = SubResource("CircleShape2D_kovgu")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -14)
 sprite_frames = SubResource("SpriteFrames_x72wf")
-animation = &"idle"
+animation = &"run"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -144,6 +157,11 @@ collision_mask = 16
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerHurtBox"]
 position = Vector2(0, -8)
 shape = SubResource("CapsuleShape2D_337ul")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = SubResource("AudioStreamRandomizer_c00g3")
+pitch_scale = 0.8
+bus = &"SFX"
 
 [connection signal="timeout" from="GracePeriod" to="." method="_on_grace_period_timeout"]
 [connection signal="area_entered" from="PlayerHurtBox" to="." method="_on_player_hurt_box_area_entered"]

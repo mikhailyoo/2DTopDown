@@ -19,6 +19,7 @@ func _on_timer_timeout():
 	var end_screen_instance = end_screen_scene.instantiate() as EndScreen
 	get_parent().add_child(end_screen_instance)
 	end_screen_instance.change_to_victory()
+	end_screen_instance.play_jingle(true)
 
 
 func _on_difficulty_timer_timeout():

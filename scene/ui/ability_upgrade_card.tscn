@@ -1,6 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://ct44uiuuof1nh"]
+[gd_scene load_steps=15 format=3 uid="uid://ct44uiuuof1nh"]
 
 [ext_resource type="Script" path="res://scene/ui/ability_upgrade_card.gd" id="1_iqe4j"]
+[ext_resource type="AudioStream" uid="uid://d270xktagu77y" path="res://assets/audio/clicks/swing2.wav" id="2_6a57b"]
+[ext_resource type="AudioStream" uid="uid://cfc4rqdc2mnhc" path="res://assets/audio/clicks/click1.ogg" id="3_xutlm"]
+[ext_resource type="AudioStream" uid="uid://bsqvb75anmk1i" path="res://assets/audio/clicks/click2.ogg" id="4_6gbps"]
+[ext_resource type="AudioStream" uid="uid://deu77ls6n1px" path="res://assets/audio/clicks/click3.ogg" id="5_hrxsx"]
+[ext_resource type="AudioStream" uid="uid://cxpfryrj0h3mu" path="res://assets/audio/clicks/click4.ogg" id="6_1kejq"]
+[ext_resource type="AudioStream" uid="uid://ctc6w0cyg13sy" path="res://assets/audio/clicks/click5.ogg" id="7_qbd3c"]
 
 [sub_resource type="Animation" id="Animation_um3ml"]
 length = 0.001
@@ -124,6 +130,19 @@ _data = {
 "selected": SubResource("Animation_4ixxy")
 }
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_fq7tk"]
+random_pitch = 1.5
+streams_count = 1
+stream_0/stream = ExtResource("2_6a57b")
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_en7ph"]
+streams_count = 5
+stream_0/stream = ExtResource("3_xutlm")
+stream_1/stream = ExtResource("4_6gbps")
+stream_2/stream = ExtResource("5_hrxsx")
+stream_3/stream = ExtResource("6_1kejq")
+stream_4/stream = ExtResource("7_qbd3c")
+
 [node name="AbilityUpgradeCard" type="PanelContainer" groups=["upgrade_card"]]
 custom_minimum_size = Vector2(120, 170)
 pivot_offset = Vector2(78, 109)
@@ -170,6 +189,15 @@ theme_override_colors/font_outline_color = Color(0.133333, 0.133333, 0.133333, 1
 theme_override_constants/outline_size = 4
 text = "There will be the description"
 autowrap_mode = 2
+
+[node name="HoverSound" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_fq7tk")
+volume_db = -15.0
+bus = &"SFX"
+
+[node name="ClickSound" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_en7ph")
+bus = &"SFX"
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

@@ -40,4 +40,5 @@ func _on_area_2d_area_entered(area):
 	tween.tween_method(tween_exp_bottle.bind(global_position), 0.0, 1.0, 0.3)\
 	.set_ease(Tween.EASE_IN)\
 	.set_trans(Tween.TRANS_CUBIC)
+	$AudioStreamPlayer2D.play()
 	tween.tween_callback(exp_collected)

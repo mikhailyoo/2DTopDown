@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bgwkbvdhntw8v"]
+
+[ext_resource type="AudioStream" uid="uid://bxlmhqbs1ewer" path="res://assets/audio/music/The_Bards_Tale.ogg" id="1_u628c"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_u628c")
+volume_db = -18.0

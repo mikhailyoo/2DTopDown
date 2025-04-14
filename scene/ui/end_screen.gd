@@ -16,6 +16,13 @@ func _ready():
 
 func change_to_victory():
 	name_label.text = "Victory"
+	
+
+func play_jingle(victory: bool = false):
+	if victory:
+		$VictorySound.play()
+	else:
+		$DefeatSound.play()
 
 
 func _on_restart_button_pressed():

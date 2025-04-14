@@ -7,10 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://c87jgklepc1ni" path="res://scene/ui/experience_bar.tscn" id="2_0ji2t"]
 [ext_resource type="PackedScene" uid="uid://4euuhnshhm2a" path="res://scene/manager/arena_time_manager.tscn" id="2_4mywi"]
 [ext_resource type="PackedScene" uid="uid://bjvqssei4afw6" path="res://scene/ui/end_screen.tscn" id="2_dv6je"]
-[ext_resource type="PackedScene" uid="uid://b0ump57ta6uh8" path="res://scene/player/player.tscn" id="2_ts23m"]
 [ext_resource type="PackedScene" uid="uid://c5rm0xnqayqhd" path="res://scene/manager/experience_manager.tscn" id="3_j7nn6"]
 [ext_resource type="PackedScene" uid="uid://c8re7lujgbs2q" path="res://scene/manager/upgrade_manager.tscn" id="6_p8nyf"]
 [ext_resource type="Script" path="res://scene/level/camera_2d.gd" id="11_eqtrg"]
+[ext_resource type="PackedScene" uid="uid://b0ump57ta6uh8" path="res://scene/game_objects/player/player.tscn" id="11_wnkfs"]
 [ext_resource type="PackedScene" uid="uid://q4ql83qctipu" path="res://scene/ui/vignette.tscn" id="12_ltc33"]
 
 [node name="Level" type="Node"]
@@ -46,9 +46,9 @@ tile_set = ExtResource("1_a55n7")
 [node name="BackLayer" type="Node2D" parent="." groups=["back_layer"]]
 y_sort_enabled = true
 
-[node name="Player" parent="BackLayer" instance=ExtResource("2_ts23m")]
+[node name="Player" parent="BackLayer" instance=ExtResource("11_wnkfs")]
 unique_name_in_owner = true
-position = Vector2(112, 90)
+position = Vector2(150, 90)
 
 [node name="FrontLayer" type="Node2D" parent="." groups=["front_layer"]]
 

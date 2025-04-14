@@ -30,6 +30,7 @@ func _on_gui_input(event):
 		for card in get_tree().get_nodes_in_group("upgrade_card"):
 			if card == self:
 				animation_player.play("selected")
+				$ClickSound.play()
 			else:
 				card.animation_player.play("discard")
 		await animation_player.animation_finished
@@ -39,6 +40,7 @@ func _on_gui_input(event):
 func _on_mouse_entered():
 	if disabled:
 		return
+	$HoverSound.play()
 	scale = Vector2 (1.05, 1.05)
 
 
