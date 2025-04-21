@@ -1,5 +1,6 @@
-res://scene/global
 res://scene/ui
+res://scene/level
+res://scene/global
 res://scene/components
 res://resources/theme
 res://scene/game_objects/goblin
@@ -9,4 +10,3 @@ res://resources/upgrades
 res://scene/game_objects/exp_bottle
 res://scene/abilities/attack_ability
 res://resources
-res://scene/level
