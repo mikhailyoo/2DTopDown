@@ -1,6 +1,7 @@
+HSlider
+Label
 MarginContainer
 VBoxContainer
-Label
 PanelContainer
 CanvasLayer
 AudioStreamPlayer

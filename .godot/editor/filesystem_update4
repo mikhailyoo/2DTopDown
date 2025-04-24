@@ -1,7 +1,13 @@
+res://scene/ui/options_menu.tscn
 res://resources/theme/main_theme.tres
 res://scene/components/flash_component.gdshader
 res://resources/world.tres
 res://scene/ui/vignette.gdshader
+res://scene/ui/options_menu.gd
+res://scene/level/level.tscn
 res://scene/ui/main_menu.tscn
 res://scene/ui/main_menu.gd
-res://scene/level/level.tscn
+res://scene/game_objects/mushroom/mushroom.tscn
+res://scene/game_objects/goblin/goblin.tscn
+res://scene/global/music_player.tscn
+res://scene/components/death_component.tscn

@@ -1,0 +1,87 @@
+[gd_scene load_steps=3 format=3 uid="uid://d361qmpbu01fj"]
+
+[ext_resource type="Script" path="res://scene/ui/options_menu.gd" id="1_x2j4c"]
+[ext_resource type="PackedScene" uid="uid://casqlq2123jjf" path="res://scene/ui/sound_button.tscn" id="3_4l3je"]
+
+[node name="OptionsMenu" type="CanvasLayer"]
+script = ExtResource("1_x2j4c")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Options Menu"
+horizontal_alignment = 1
+
+[node name="SFXContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/SFXContainer"]
+layout_mode = 2
+text = "SFX Volume"
+
+[node name="SFXSlider" type="HSlider" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/SFXContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+
+[node name="MusicContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/MusicContainer"]
+layout_mode = 2
+text = "Music Volume"
+
+[node name="MusicSlider" type="HSlider" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/MusicContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+
+[node name="WindowModeContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/WindowModeContainer"]
+layout_mode = 2
+text = "Window Mode"
+
+[node name="WindowModeButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/WindowModeContainer" instance=ExtResource("3_4l3je")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="BackButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("3_4l3je")]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "Back"
+
+[connection signal="value_changed" from="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/SFXContainer/SFXSlider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="value_changed" from="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/MusicContainer/MusicSlider" to="." method="_on_music_slider_value_changed"]
+[connection signal="pressed" from="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/WindowModeContainer/WindowModeButton" to="." method="_on_window_mode_button_pressed"]
+[connection signal="pressed" from="MarginContainer/PanelContainer/MarginContainer/VBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
