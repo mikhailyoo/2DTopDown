@@ -1,9 +1,11 @@
-res://scene/ui/pause_menu.tscn
 res://resources/theme/main_theme.tres
 res://scene/components/flash_component.gdshader
 res://resources/world.tres
 res://scene/ui/vignette.gdshader
-res://scene/ui/pause_menu.gd
+res://scene/global/meta_progression.tscn
+res://scene/global/meta_progression.gd
+res://resources/meta_upgrades/meta_upgrades.gd
+res://resources/meta_upgrades/experience_drop_chance.tres
 res://scene/level/level.tscn
 res://scene/ui/main_menu.tscn
 res://scene/ui/options_menu.tscn
@@ -11,5 +13,6 @@ res://scene/game_objects/mushroom/mushroom.tscn
 res://scene/game_objects/goblin/goblin.tscn
 res://scene/global/music_player.tscn
 res://scene/components/death_component.tscn
+res://scene/ui/pause_menu.tscn
 res://scene/ui/end_screen.tscn
-res://scene/level/level.gd
+res://scene/global/global.tscn

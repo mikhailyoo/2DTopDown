@@ -1,6 +1,7 @@
+res://resources/meta_upgrades
+res://scene/global
 res://scene/ui
 res://scene/level
-res://scene/global
 res://scene/components
 res://resources/theme
 res://scene/game_objects/goblin

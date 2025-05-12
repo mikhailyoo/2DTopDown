@@ -1,2 +1,2 @@
-Theme
 Resource
+Theme

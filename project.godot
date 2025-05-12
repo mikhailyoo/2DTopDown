@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Global="*res://scene/global/global.tscn"
 MusicPlayer="*res://scene/global/music_player.tscn"
+MetaProgression="*res://scene/global/meta_progression.tscn"
 
 [debug]
 
