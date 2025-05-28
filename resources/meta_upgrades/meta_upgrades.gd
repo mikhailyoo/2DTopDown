@@ -1,5 +1,5 @@
 extends Resource
-class_name MetaUpgrades
+class_name MetaUpgrade
 
 
 @export var id: String

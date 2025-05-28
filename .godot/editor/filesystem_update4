@@ -3,4 +3,6 @@ res://resources/theme/main_theme.tres
 res://scene/components/flash_component.gdshader
 res://resources/world.tres
 res://scene/ui/vignette.gdshader
-res://scene/global/meta_progression.gd
+res://resources/meta_upgrades/meta_upgrades.gd
+res://scene/ui/meta_upgrade_card.tscn
+res://scene/ui/meta_upgrade_card.gd
