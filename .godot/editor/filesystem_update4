@@ -1,3 +1,4 @@
+res://scene/ui/main_menu.gd
 res://scene/ui/main_menu.tscn
 res://resources/theme/main_theme.tres
 res://scene/components/flash_component.gdshader
@@ -6,9 +7,13 @@ res://scene/ui/vignette.gdshader
 res://scene/level/level.tscn
 res://scene/ui/ability_upgrade_card.tscn
 res://scene/ui/meta_upgrade_card.tscn
-res://scene/global/meta_progression.gd
 res://scene/ui/meta_menu.tscn
 res://scene/ui/meta_menu.gd
-res://resources/meta_upgrades/meta_upgrades.gd
+res://scene/global/meta_progression.tscn
+res://scene/global/meta_progression.gd
 res://scene/ui/meta_upgrade_card.gd
 res://resources/meta_upgrades/experience_drop_chance.tres
+res://scene/components/exp_bottle_drop_component.tscn
+res://scene/components/exp_bottle_drop_component.gd
+res://scene/game_objects/goblin/goblin.tscn
+res://scene/game_objects/mushroom/mushroom.tscn

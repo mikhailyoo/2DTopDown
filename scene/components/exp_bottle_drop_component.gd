@@ -1,7 +1,7 @@
 extends Node
 
 
-@export var drop_percent = 0
+@export_range(0, 1) var drop_percent: float = 0.3
 @export var exp_bottle_scene: PackedScene
 @export var health_component: Node
 
@@ -11,7 +11,9 @@ func _ready():
 	
 	
 func on_died ():
-	if randf() < drop_percent:
+	var drop_upgrade = MetaProgression.get_upgrade_quantity("experience_drop_chance") * 0.1
+	drop_percent += drop_upgrade
+	if randf() > drop_percent:
 		return
 	
 	if exp_bottle_scene == null:
@@ -25,3 +27,4 @@ func on_died ():
 	var back_layer = get_tree().get_first_node_in_group("back_layer")
 	back_layer.add_child(exp_bottle_instance)
 	exp_bottle_instance.global_position = spawn_pos
+	print(drop_percent)

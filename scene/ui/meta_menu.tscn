@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=4 uid="uid://le7vekhmtate"]
+[gd_scene load_steps=7 format=4 uid="uid://le7vekhmtate"]
 
 [ext_resource type="Script" path="res://scene/ui/meta_menu.gd" id="1_tm4fq"]
 [ext_resource type="Script" path="res://resources/meta_upgrades/meta_upgrades.gd" id="2_fbbqi"]
 [ext_resource type="PackedScene" uid="uid://q4ql83qctipu" path="res://scene/ui/vignette.tscn" id="2_n78mw"]
 [ext_resource type="Resource" uid="uid://ctip8bqqmadi1" path="res://resources/meta_upgrades/experience_drop_chance.tres" id="3_eqaul"]
 [ext_resource type="TileSet" uid="uid://e5gea1nudkw5" path="res://resources/world.tres" id="3_km12c"]
+[ext_resource type="PackedScene" uid="uid://casqlq2123jjf" path="res://scene/ui/sound_button.tscn" id="7_tghly"]
 
 [node name="MetaMenu" type="CanvasLayer"]
 script = ExtResource("1_tm4fq")
@@ -33,4 +34,13 @@ layout_mode = 2
 size_flags_horizontal = 4
 theme_override_constants/h_separation = 16
 theme_override_constants/v_separation = 16
-columns = 3
+columns = 2
+
+[node name="BackButton" parent="MarginContainer" instance=ExtResource("7_tghly")]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Back"
+
+[connection signal="pressed" from="MarginContainer/BackButton" to="." method="_on_back_button_pressed"]
