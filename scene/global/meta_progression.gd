@@ -10,8 +10,8 @@ var save_data: Dictionary = {
 
 func _ready() -> void:
 	Global.experience_bottle_collected.connect(on_experience_collected)
-	add_meta_upgrade(load("res://resources/meta_upgrades/experience_drop_chance.tres"))
 	load_file()
+	
 
 func save_file():
 	var file = FileAccess.open(save_path, FileAccess.WRITE)
@@ -25,13 +25,19 @@ func load_file():
 	save_data = file.get_var()
 	
 	
-func add_meta_upgrade(upgrade: MetaUpgrades):
+func add_meta_upgrade(upgrade: MetaUpgrade):
 	if not save_data["meta_upgrades"].has(upgrade.id):
 		save_data["meta_upgrades"][upgrade.id] = {
 			"quantity": 0
 		}
 		
 	save_data["meta_upgrades"][upgrade.id]["quantity"] += 1
+	
+
+func get_upgrade_quantity(upgrade_id: String):
+	if save_data["meta_upgrades"].has(upgrade_id):
+		return save_data["meta_upgrades"][upgrade_id]["quantity"]
+	return 0
 	
 
 func on_experience_collected(number: float):

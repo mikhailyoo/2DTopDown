@@ -1,4 +1,5 @@
 Label
+GridContainer
 TextureRect
 HBoxContainer
 ProgressBar
@@ -11,4 +12,3 @@ CanvasLayer
 AudioStreamPlayer
 AudioStreamPlayer2D
 Button
-AnimationPlayer
