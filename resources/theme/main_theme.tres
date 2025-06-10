@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=14 format=3 uid="uid://cw04ggqpuqrlu"]
+[gd_resource type="Theme" load_steps=18 format=3 uid="uid://cw04ggqpuqrlu"]
 
 [ext_resource type="Texture2D" uid="uid://bwv5hs550156s" path="res://assets/ui_panel.png" id="1_g3ysd"]
 [ext_resource type="FontFile" uid="uid://cqpv4js1r6ol" path="res://resources/theme/Bitfantasy.ttf" id="1_odoer"]
@@ -55,6 +55,29 @@ texture_margin_bottom = 2.0
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u2hhs"]
 bg_color = Color(0.133333, 0.133333, 0.133333, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s8ril"]
+bg_color = Color(0.980392, 0.796078, 0.243137, 1)
+border_width_left = 2
+border_width_right = 2
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w1sqc"]
+bg_color = Color(0.980392, 0.796078, 0.243137, 1)
+border_width_left = 2
+border_width_right = 2
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_20l6k"]
+bg_color = Color(0.980392, 0.796078, 0.243137, 1)
+border_width_left = 2
+border_width_right = 2
+border_color = Color(0.8, 0.8, 0.8, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ejkpe"]
+border_width_left = 5
+border_width_right = 5
+border_color = Color(0.133333, 0.133333, 0.133333, 1)
+
 [resource]
 default_font = ExtResource("1_odoer")
 Button/colors/font_color = Color(1, 1, 1, 1)
@@ -71,3 +94,7 @@ PanelContainer/styles/panel = SubResource("StyleBoxTexture_6fir8")
 PanelContainer2/base_type = &"PanelContainer"
 PanelContainer2/styles/panel = SubResource("StyleBoxTexture_ieh0n")
 ProgressBar/styles/background = SubResource("StyleBoxFlat_u2hhs")
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_s8ril")
+VScrollBar/styles/grabber_highlight = SubResource("StyleBoxFlat_w1sqc")
+VScrollBar/styles/grabber_pressed = SubResource("StyleBoxFlat_20l6k")
+VScrollBar/styles/scroll = SubResource("StyleBoxFlat_ejkpe")
