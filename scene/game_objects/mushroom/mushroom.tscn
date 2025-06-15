@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://c805oiy85akah" path="res://scene/game_objects/mushroom/SmallMushroom_Walk_4.png" id="8_6bg6h"]
 [ext_resource type="Shader" path="res://scene/components/flash_component.gdshader" id="8_d4b48"]
 [ext_resource type="PackedScene" uid="uid://snctce3halo1" path="res://scene/components/hit_sound_component.tscn" id="9_r0xml"]
+[ext_resource type="PackedScene" uid="uid://bdc0fhi7quamm" path="res://scene/components/enemy_hit_box_component.tscn" id="18_04bb0"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_n2ito"]
 resource_local_to_scene = true
@@ -65,9 +66,6 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_u0udm"]
 radius = 4.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_2r5pv"]
-radius = 5.09902
-
 [node name="Mushroom" type="CharacterBody2D" groups=["enemy"]]
 collision_layer = 4
 collision_mask = 5
@@ -108,10 +106,4 @@ offset = Vector2(0, -16)
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_u0udm")
 
-[node name="EnemyHitBox" type="Area2D" parent="."]
-collision_layer = 16
-collision_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyHitBox"]
-position = Vector2(0, -5)
-shape = SubResource("CircleShape2D_2r5pv")
+[node name="EnemyHitBox" parent="." instance=ExtResource("18_04bb0")]

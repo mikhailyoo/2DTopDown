@@ -9,6 +9,7 @@ extends CharacterBody2D
 
 var base_speed = 0
 var enemies_colliding = 0
+var enemy_damage: int = 0
 
 func _ready():
 	base_speed = movement_component.max_speed
@@ -42,7 +43,7 @@ func movement_vector():
 func check_if_damaged():
 	if enemies_colliding == 0 || !grace_period.is_stopped():
 		return
-	health_component.take_damage(1)
+	health_component.take_damage(enemy_damage)
 	grace_period.start()
 	
 	
@@ -50,6 +51,7 @@ func health_update():
 	progress_bar.value = health_component.get_health_value()
 	
 func _on_player_hurt_box_area_entered(area):
+	enemy_damage = area.enemy_damage()
 	enemies_colliding += 1
 	check_if_damaged()
 

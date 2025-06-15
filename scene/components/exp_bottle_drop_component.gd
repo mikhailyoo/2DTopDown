@@ -27,4 +27,3 @@ func on_died ():
 	var back_layer = get_tree().get_first_node_in_group("back_layer")
 	back_layer.add_child(exp_bottle_instance)
 	exp_bottle_instance.global_position = spawn_pos
-	print(drop_percent)

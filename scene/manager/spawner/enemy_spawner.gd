@@ -5,6 +5,7 @@ extends Node
 @export var arena_time_manager: ArenaTimeManager
 @export var mushroom_scene: PackedScene
 @export var goblin_scene: PackedScene
+@export var wolf_scene: PackedScene
 
 var base_spawn_time
 var min_spawn_time = 0.2
@@ -25,7 +26,9 @@ func get_spawn_position():
 	
 	for i in 24:
 		spawn_position = player.global_position + (random_direction * random_distance)
-		var raycast = PhysicsRayQueryParameters2D.create(player.global_position, spawn_position, 1)
+		var ray_extender = random_direction * 20
+		var raycast = PhysicsRayQueryParameters2D.create\
+		(player.global_position, spawn_position + ray_extender, 1)
 		var intersection = get_tree().root.world_2d.direct_space_state.intersect_ray(raycast)
 		
 		if intersection.is_empty():
@@ -53,6 +56,8 @@ func on_difficulty_increased(difficulty_level:int):
 	var new_spawn_time = max(min_spawn_time, (base_spawn_time - (difficulty_level * difficulty_multiplier)))
 	timer.wait_time = new_spawn_time
 	
-	if difficulty_level == 1:
+	if difficulty_level == 2:
 		enemy_pool.add_mob(goblin_scene, 70)
+	elif difficulty_level == 4:
+		enemy_pool.add_mob(wolf_scene, 20)
 		
