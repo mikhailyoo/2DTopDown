@@ -55,7 +55,7 @@ func on_upgrade_added(upgrade:AbilityUpgrade,current_upgrades:Dictionary):
 		timer.start()
 		
 	elif upgrade.id == "sword_damage":
-		damage_multiplier = 1 + (current_upgrades["sword_damage"]["quantity"] * .15)
+		damage_multiplier += (current_upgrades["sword_damage"]["quantity"] * .15)
 	
 		
 	
