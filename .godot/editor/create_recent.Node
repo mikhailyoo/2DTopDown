@@ -1,3 +1,7 @@
+AnimationPlayer
+Timer
+CollisionShape2D
+Sprite2D
 MarginContainer
 ScrollContainer
 Label
@@ -9,6 +13,3 @@ VBoxContainer
 Node
 HSlider
 PanelContainer
-CanvasLayer
-AudioStreamPlayer
-AudioStreamPlayer2D
