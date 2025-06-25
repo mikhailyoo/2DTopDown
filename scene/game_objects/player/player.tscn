@@ -98,6 +98,7 @@ stream_3/stream = ExtResource("19_2lntu")
 stream_4/stream = ExtResource("20_h3aki")
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
+modulate = Color(0.447059, 0.839216, 0.807843, 1)
 collision_layer = 0
 script = ExtResource("1_8oolj")
 
@@ -119,6 +120,10 @@ flash_material = SubResource("ShaderMaterial_47318")
 [node name="GracePeriod" type="Timer" parent="."]
 wait_time = 0.2
 one_shot = true
+
+[node name="HealthRegenTimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
 
 [node name="ProgressBar" type="ProgressBar" parent="."]
 custom_minimum_size = Vector2(24, 4)
@@ -164,5 +169,6 @@ pitch_scale = 0.8
 bus = &"SFX"
 
 [connection signal="timeout" from="GracePeriod" to="." method="_on_grace_period_timeout"]
+[connection signal="timeout" from="HealthRegenTimer" to="." method="_on_health_regen_timer_timeout"]
 [connection signal="area_entered" from="PlayerHurtBox" to="." method="_on_player_hurt_box_area_entered"]
 [connection signal="area_exited" from="PlayerHurtBox" to="." method="_on_player_hurt_box_area_exited"]
