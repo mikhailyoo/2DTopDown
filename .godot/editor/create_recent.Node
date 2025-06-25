@@ -1,5 +1,5 @@
-AnimationPlayer
 Timer
+AnimationPlayer
 CollisionShape2D
 Sprite2D
 MarginContainer
@@ -12,4 +12,3 @@ ProgressBar
 VBoxContainer
 Node
 HSlider
-PanelContainer
