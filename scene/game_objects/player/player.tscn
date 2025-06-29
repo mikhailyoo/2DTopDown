@@ -1,6 +1,7 @@
-[gd_scene load_steps=28 format=3 uid="uid://b0ump57ta6uh8"]
+[gd_scene load_steps=29 format=3 uid="uid://b0ump57ta6uh8"]
 
 [ext_resource type="Script" path="res://scene/game_objects/player/player.gd" id="1_8oolj"]
+[ext_resource type="PackedScene" uid="uid://d06vk65lmu0pf" path="res://scene/ui/mobile_controller.tscn" id="2_lyrr2"]
 [ext_resource type="PackedScene" uid="uid://d02yl8nx3spsb" path="res://scene/abilities/attack_ability/attack_controller.tscn" id="2_prcev"]
 [ext_resource type="PackedScene" uid="uid://bknx8pl355mwx" path="res://scene/components/health_component.tscn" id="3_5ccbm"]
 [ext_resource type="PackedScene" uid="uid://xiddgiw217tu" path="res://scene/components/movement_component.tscn" id="4_gx6ij"]
@@ -101,6 +102,9 @@ stream_4/stream = ExtResource("20_h3aki")
 modulate = Color(0.447059, 0.839216, 0.807843, 1)
 collision_layer = 0
 script = ExtResource("1_8oolj")
+
+[node name="MobileController" parent="." instance=ExtResource("2_lyrr2")]
+layer = 0
 
 [node name="AbilityManager" type="Node" parent="."]
 

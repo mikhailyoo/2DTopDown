@@ -1,8 +1,8 @@
+res://scene/ui
 res://scene/abilities/anvil_ability
 res://scene/components
 res://resources/meta_upgrades
 res://scene/global
-res://scene/ui
 res://scene/level
 res://resources/theme
 res://scene/game_objects/goblin
