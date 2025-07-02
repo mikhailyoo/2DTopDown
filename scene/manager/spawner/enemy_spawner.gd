@@ -6,6 +6,7 @@ extends Node
 @export var mushroom_scene: PackedScene
 @export var goblin_scene: PackedScene
 @export var wolf_scene: PackedScene
+@export var mini_boss_scene: PackedScene
 
 var base_spawn_time
 var min_spawn_time = 0.2
@@ -60,4 +61,6 @@ func on_difficulty_increased(difficulty_level:int):
 		enemy_pool.add_mob(goblin_scene, 70)
 	elif difficulty_level == 4:
 		enemy_pool.add_mob(wolf_scene, 20)
+	elif difficulty_level == 6:
+		enemy_pool.add_mob(mini_boss_scene, 10)
 		

@@ -1,7 +1,10 @@
-CanvasLayer
+Node2D
 Timer
-AnimationPlayer
 CollisionShape2D
+AnimatedSprite2D
+Area2D
+CanvasLayer
+AnimationPlayer
 Sprite2D
 MarginContainer
 ScrollContainer
@@ -10,6 +13,3 @@ GridContainer
 TextureRect
 HBoxContainer
 ProgressBar
-VBoxContainer
-Node
-HSlider
