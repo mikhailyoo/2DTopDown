@@ -100,7 +100,7 @@ stream_4/stream = ExtResource("20_h3aki")
 
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 modulate = Color(0.447059, 0.839216, 0.807843, 1)
-collision_layer = 0
+collision_layer = 2
 script = ExtResource("1_8oolj")
 
 [node name="MobileController" parent="." instance=ExtResource("2_lyrr2")]
