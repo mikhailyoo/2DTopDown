@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bwlivccalbyeh"]
 
 [ext_resource type="Script" path="res://scene/ui/meta_upgrade_card.gd" id="1_eobui"]
-[ext_resource type="Texture2D" uid="uid://hl51yntjjrpa" path="res://scene/game_objects/exp_bottle/exp_bottle.png" id="2_iydmr"]
+[ext_resource type="Texture2D" uid="uid://c8dpocvqwp4oj" path="res://assets/coin_anim_f0.png" id="2_a7ix5"]
 [ext_resource type="PackedScene" uid="uid://casqlq2123jjf" path="res://scene/ui/sound_button.tscn" id="3_2pkf4"]
 
 [sub_resource type="Animation" id="Animation_um3ml"]
@@ -192,7 +192,8 @@ layout_mode = 2
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer"]
 layout_mode = 2
-texture = ExtResource("2_iydmr")
+texture = ExtResource("2_a7ix5")
+expand_mode = 3
 
 [node name="ProgressLabel" type="Label" parent="MarginContainer/VBoxContainer/VBoxContainer2/HBoxContainer"]
 unique_name_in_owner = true

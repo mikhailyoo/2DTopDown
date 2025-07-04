@@ -8,9 +8,7 @@ script = ExtResource("1_8edri")
 end_screen_scene = ExtResource("2_a7ahu")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 600.0
 one_shot = true
-autostart = true
 
 [node name="DifficultyTimer" type="Timer" parent="."]
 wait_time = 5.0

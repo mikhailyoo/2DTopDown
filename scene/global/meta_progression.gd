@@ -1,6 +1,10 @@
 extends Node
 
+@onready var gold_text: Label = %GoldText
+
 var save_path = "user://game.save"
+
+var gold: int
 
 var save_data: Dictionary = {
 	"meta_upgrade_currency": 0,
@@ -9,8 +13,8 @@ var save_data: Dictionary = {
 
 
 func _ready() -> void:
-	Global.experience_bottle_collected.connect(on_experience_collected)
 	load_file()
+	update_gold()
 	
 
 func save_file():
@@ -39,7 +43,9 @@ func get_upgrade_quantity(upgrade_id: String):
 		return save_data["meta_upgrades"][upgrade_id]["quantity"]
 	return 0
 	
-
-func on_experience_collected(number: float):
-	save_data["meta_upgrade_currency"] += number
+	
+func update_gold():
+	gold = save_data["meta_upgrade_currency"]
+	gold_text.text = str(gold)
 	save_file()
+	

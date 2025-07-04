@@ -1,6 +1,36 @@
-[gd_scene load_steps=2 format=3 uid="uid://cardtckufac3q"]
+[gd_scene load_steps=3 format=3 uid="uid://cardtckufac3q"]
 
 [ext_resource type="Script" path="res://scene/global/meta_progression.gd" id="1_28lcf"]
+[ext_resource type="Texture2D" uid="uid://c8dpocvqwp4oj" path="res://assets/coin_anim_f0.png" id="2_60i7l"]
 
 [node name="MetaProgression" type="Node"]
 script = ExtResource("1_28lcf")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -76.0
+offset_bottom = 45.0
+grow_horizontal = 0
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_60i7l")
+expand_mode = 3
+
+[node name="GoldText" type="Label" parent="CanvasLayer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "100"
